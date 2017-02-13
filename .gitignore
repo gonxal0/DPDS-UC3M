@@ -1,0 +1,14 @@
+# Ignora los archivos que se generan en la compilación
+
+# Ignora .aux
+*.aux
+
+# Ignora .log
+*.log
+
+# Ignora .out
+*.out
+
+# Ignora .syntex.gz
+*.syn*
+
