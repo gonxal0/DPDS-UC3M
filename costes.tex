@@ -1,0 +1,253 @@
+\documentclass[10pt,a4paper,oldfontcommands]{dpds}
+
+\makepage{logouc3m}
+\pagestyle{myruled}
+
+
+% DOCUMENT
+\begin{document}
+\pagecolor{fondo}
+\color{principal}
+
+\chapter{Costes}
+\clearpage
+
+\section{Introducción}
+
+
+\section{Cálculo de Costes}
+\subsection{Resumen del personal a cargo}
+
+\subsubsection{Probando}
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l l c}
+\hline
+\textbf{CARGO} & \textbf{NOMBRES} & \textbf{COSTE/HORA}\\ \hline
+Jefe de Proyecto & Alberto García & 45  \\
+Analistas de Sistemas & Daniel González & 35\\
+Gestión de Configuración & Juan Abascal & 30\\
+Responsable de Calidad & Adriana Lima & 30\\
+Responsable de Pruebas & Carlos Olivares & 30\\
+Desarrolladores & Carlos Tormo y  Irina Saik & 25\\
+\end{tabular}
+\caption{Resumen de personal.}
+\label{tab:personal}
+\end{center}
+\end{table}
+
+
+
+\begin{center}
+\begin{longtable}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+
+%HEAD
+\hline
+ACTIVIDADES & JEFE DE PROYECTO & ANALISTA 1 & ANALISTA 2 & ANALISTA 3 & CONFIGURACIÓN & CALIDAD & PRUEBAS & TOTAL \\
+\hline
+\endfirsthead
+\multicolumn{4}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+ACTIVIDADES & JEFE DE PROYECTO & ANALISTA 1 & ANALISTA 2 & ANALISTA 3 & CONFIGURACIÓN & CALIDAD & PRUEBAS & TOTAL \\
+\hline
+\endhead
+
+%FOOT
+\hline \multicolumn{9}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+
+%table
+
+
+\caption{Reparto de horas}\\
+\end{longtable}
+\end{center}
+
+
+
+
+\subsection{Salarios de los empleados}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l l c c}
+\hline
+\textbf{CARGO} & \textbf{NOMBRE} & \textbf{TOTAL HORAS} & \textbf{COSTE}\\ \hline \hline
+Jefe de Proyecto & Alberto García & 100 & 4.500\\
+Analista de Sistemas & Daniel González & 124 & 4.340\\
+Gestión de Configuración & Juan Abascal & 89 & 2.670\\
+Responsable de Calidad & Adriana Lima & 93 & 2.790\\
+Responsable de Pruebas & Carlos Olivares & 97 & 2.910\\
+Desarrollador 1 & Carlos Tormos & 75 & 1.875\\
+Desarrollador 2 & Irina Saik & 75 & 1.875\\ \hline \hline
+\textbf{TOTAL} & & \textbf{653} & \textbf{20.960} \\ \hline
+\end{tabular}
+\caption{Coste de empleados.}
+\label{tab:costePersonal}
+\end{center}
+\end{table}
+
+
+
+\subsection{Equipos informáticos}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c c c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{UNIDADES} & \textbf{PRECIO UNITARIO} & \textbf{TOTAL}\\ \hline \hline
+Tablets IPAD & 2 & 400 & 800\\
+Ordenadores MAC & 2 & 1400 & 2800\\
+Ordenadores HP & 3 & 800 & 2400\\
+Servido dedicado & 1 & 300\euro/mes & \\
+Impresora & 1 & 400 & 800\\ \hline \hline
+\textbf{TOTAL} & & & \\ \hline
+\end{tabular}
+\caption{Hardware informático.}
+\label{tab:hardware}
+\end{center}
+\end{table}
+
+
+
+\subsection{Herramientas del software}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c c c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{UNIDADES} & \textbf{PRECIO UNITARIO} & \textbf{TOTAL}\\ \hline \hline
+Licencias GitHub & 7 & 9\euro/mes & \\
+Licencias Office365 & 7 & 8,80\euro/mes & \\
+Licencia Toggle & 7 & 9\euro/mes & \\
+Licencia Trello & 7 & 10\euro/mes & \\
+Licencia Slack & 7 & 7,5\euro/mes & \\
+Google Apps for Work & 7 & 4\euro/mes & \\
+Licencia Photoshop & 3 & 19,99\euro/mes & \\
+Licencia Atom & 7 & 0\euro/mes & 0\\
+Licencia Toggle & 7 & 9\euro/mes & \\ \hline \hline
+\textbf{TOTAL} & & & \\ \hline
+\end{tabular}
+\caption{Software informático.}
+\label{tab:software}
+\end{center}
+\end{table}
+
+
+
+\subsection{Material fungible}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{TOTAL}\\ \hline \hline
+Recambios de impresora & 200\\
+Material de oficina & 200\\ \hline \hline
+\textbf{TOTAL} & \\ \hline
+\end{tabular}
+\caption{Material fungible.}
+\label{tab:fungible}
+\end{center}
+\end{table}
+
+
+\subsection{Material de pruebas}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{TOTAL}\\ \hline \hline
+Seat Ibiza 2007 & 3.000\\
+3 cámaras NetGear & 400,71\\
+Antena GPS Garmin GA 25MCX & 19,53\\
+Sensor de distacia & 19,53\\
+Quit Rapsberry Pi 3 & 85\\
+Arduino Mega 2560 & 35\\ \hline \hline
+\textbf{TOTAL} & \\ \hline
+\end{tabular}
+\caption{Material de pruebas.}
+\label{tab:pruebas}
+\end{center}
+\end{table}
+
+
+
+
+
+\subsection{Viajes y dietas}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{TOTAL}\\ \hline \hline
+Gasolina & 400\\
+Comidas & 3.000\\ \hline \hline
+\textbf{TOTAL} & \\ \hline
+\end{tabular}
+\caption{Viajes y dietas.}
+\label{tab:viajes}
+\end{center}
+\end{table}
+
+
+\subsection{Costes indirectos}
+En la siguiente tabla mostramos los costes indirectos derivados de la oficina, tales como electricidad, agua, alquiler e internet.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{TOTAL}\\ \hline \hline
+Alquiler espacio co-working (Sala Tokio - Impact Hub Madrid)\footnote{Al no disponer de oficinas, se utilizará este espacio como sála de trabajo durante 5 horas diarias a un precio de 40\euro/hora} & 1000\euro/semana\\ \hline \hline
+\textbf{TOTAL} & \\ \hline
+\end{tabular}
+\caption{Costes indirectos.}
+\label{tab:indirectos}
+\end{center}
+\end{table}
+
+
+\subsection{Resumenes totales}
+En esta tabla aparece el sumatorio de todos los sub-totales anteriormente calculados.
+En la siguiente tabla mostramos los costes indirectos derivados de la oficina, tales como electricidad, agua, alquiler e internet.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{TOTAL}\\ \hline \hline
+Sueldo del equipo de trabajo & 200\\
+Equipos informáticos & 200\\
+Software informático & 200\\
+Material fungible & 200\\
+Viajes y dietas & 200\\
+Costes informáticos & 200\\ \hline \hline
+\textbf{TOTAL} & \\ \hline
+\end{tabular}
+\caption{Resúmen de costes totales.}
+\label{tab:resumenTotal}
+\end{center}
+\end{table}
+
+
+
+\subsection{Totales sin IVA}
+En esta tabla se muestra el coste del proyecto sin I.V.A, así como, el riesgo y el beneficio a obtener por la empresa.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{l c}
+\hline
+\textbf{DESCRIPCIÓN} & \textbf{TOTAL}\\ \hline \hline
+Coste del proyecto (sin IVA) & 200\\
+Riesgo (en porcentaje) & 15\% \\
+Beneficio (en porcentaje)** & 10\% \\ \hline \hline
+\textbf{TOTAL} & \\ \hline
+\end{tabular}
+\caption{Riesgos y beneficios.}
+\label{tab:total}
+\end{center}
+\end{table}
+
+
+
+\end{document}
