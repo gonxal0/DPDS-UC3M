@@ -1,14 +1,17 @@
-# Ignora los archivos que se generan en la compilación
+# Ignore los archivos que se generan en la compilación
 
-# Ignora .aux
+# Ignore .aux
 *.aux
 
-# Ignora .log
+# Ignore .log
 *.log
 
-# Ignora .out
+# Ignore .out
 *.out
 
-# Ignora .syntex.gz
+# Ignore .syntex.gz
 *.syn*
+
+#Ignore compiled PDF
+*.pdf
 
