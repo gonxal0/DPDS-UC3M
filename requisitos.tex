@@ -11,14 +11,17 @@
 
 \section{Requisitos}
 \subsection{Requisitos funcionales}
-\subsection{Control de punto ciego}
-\begin{table}[h]
+
+
+\subsubsection{Control de punto ciego}
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-01} } \\
 \hline \hline
 \textbf{Nombre del Requisito} & Detección punto ciego  \\
-\textbf{Descripción} & El sistema tiene que detecta un coche situado en la zona de punto ciego del retrovisor del vehículo  \\
+\textbf{Descripción} & El sistema tiene que detectar un coche situado en la zona de punto ciego del retrovisores exteriores del vehículo.  \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -28,15 +31,19 @@
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-02} } \\
 \hline \hline
 \textbf{Nombre del Requisito} & Notificar coche en punto ciego  \\
-\textbf{Descripción} & El sistema tiene que avisar cuando haya un coche en el punto ciego \\
+\hline
+\textbf{Descripción} & El sistema tiene que avisar de que un vehículo se encuentra en la zona de punto ciego. \\
+\hline
 \textbf{Tipo} & Requisito  \\
+\hline
 \textbf{Fuente del Requisito} & Analista  \\
+\hline
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
 \end{tabular}
 \caption{Requisito funcional 02}
@@ -44,13 +51,13 @@
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-03} } \\
 \hline \hline
-\textbf{Nombre del Requisito} & Notificar coche en el punto ciego \\
-\textbf{Descripción} & Cuando haya un coche en el punto ciego, el sistema notificará mediante una notificación en el retrovisor \\
+\textbf{Nombre del Requisito} & Notificación en el retrovisor \\
+\textbf{Descripción} & El sistema avisará de que otro vehículo está en la zona de punto ciego mediante una notificación en el retrovisor.\\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Analista  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -60,13 +67,13 @@
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-04} } \\
 \hline \hline
-\textbf{Nombre del Requisito} & Activar intermitente con coche en punto ciego  \\
-\textbf{Descripción} &  El sistema emitirá una señal sonora cuando el conductor active el intermitente y haya un vehículo en el punto ciego \\
+\textbf{Nombre del Requisito} & Notificación sonora por vehículo en el punto ciego  \\
+\textbf{Descripción} &  Cuando el usuario active un intermitente, el sistema emitirá una señal sonora en el caso de que haya un vehículo en el punto ciego. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -76,15 +83,16 @@
 \end{center}
 \end{table}
 
-\subsection{Aviso de cambio de carril}
 
-\begin{table}[h]
+\subsubsection{Aviso de cambio de carril}
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-05} } \\
 \hline \hline
-\textbf{Nombre del Requisito} & Vehículo acercandose a las líneas del carril \\
-\textbf{Descripción} & El sistema debe detectar cuando el vehículo se acerca a las líneas límite del carril \\
+\textbf{Nombre del Requisito} & Proximidad líneas de carril\\
+\textbf{Descripción} & El sistema debe detectar cuando el vehículo se acerca a las líneas límite del carril. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -94,23 +102,55 @@
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-06} } \\
 \hline \hline
-\textbf{Nombre del Requisito} &  \\
-\textbf{Descripción} &  \\
+\textbf{Nombre del Requisito} &  Vibración del volante por proximidad al límite del carril\\
+\textbf{Descripción} & El sistema tendrá que hacer vibrar el volante cuando se detecta un acercamiento a las líneas de límite de carril. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
 \end{tabular}
 \caption{Requisito funcional 06}
-\label{tab:personal}
+\label{tab:RF-06}
 \end{center}
 \end{table}
 
-\subsection{Alerta de velocidad}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-06} } \\
+\hline \hline
+\textbf{Nombre del Requisito} &  Excepción de aviso de cambio de carril por activación del intermitente\\
+\textbf{Descripción} & Cuando el conductor active el intermitente, el sistema de aviso de cambio de carril se desactiva. \\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Analista  \\
+\textbf{Prioridad} & Alta/Esencial  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 06}
+\label{tab:RF-06}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-06} } \\
+\hline \hline
+\textbf{Nombre del Requisito} &  Corrección de la dirección por proximidad a las líneas de límite de carril\\
+\textbf{Descripción} & El sistema corregirá ligeramente la dirección del volante cuando detecte que el vehículo se aproxima a las líneas de límite de carril. \\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Analista  \\
+\textbf{Prioridad} & Alta/Esencial  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 06}
+\label{tab:RF-06}
+\end{center}
+\end{table}
+
+\subsubsection{Alerta de velocidad}
 
 \begin{table}[h]
 \begin{center}
@@ -167,6 +207,22 @@
 \hline \hline
 \textbf{Nombre del Requisito} & Desactivar la alerta de velocidad \\
 \textbf{Descripción} & El usuario podrá desactivar la notificación del exceso de velocidad \\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Analista  \\
+\textbf{Prioridad} & Media/Deseado  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 0X}
+\label{tab:personal}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-0X} } \\
+\hline \hline
+\textbf{Nombre del Requisito} & Reactivar la alerta de velocidad \\
+\textbf{Descripción} & Si el usuario ha desactivado el sistema, este volverá a activarse al volver a inciar al sistema \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Analista  \\
 \textbf{Prioridad} & Media/Deseado  \\ \hline
