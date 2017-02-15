@@ -15,3 +15,6 @@
 #Ignore compiled PDF
 *.pdf
 
+#Ignore cosas turbias del Mac de Alberto
+*.fdb_latexmk
+*.fls

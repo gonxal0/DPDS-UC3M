@@ -223,4 +223,3 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
 
 %tabular
 \renewcommand{\arraystretch}{1.5}%
-
