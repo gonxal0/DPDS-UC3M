@@ -23,7 +23,7 @@ lor{fondo}
 \hline \hline
 \textbf{Nombre del Requisito} & Detección punto ciego  \\
 \hline
-\textbf{Descripción} & El sistema tiene que detectar un coche situado en la zona de punto ciego del retrovisores exteriores del vehículo.  \\
+\textbf{Descripción} & El sistema tiene que detectar un objeto situado en la zona de punto ciego del retrovisores exteriores del vehículo.  \\
 \hline
 \textbf{Tipo} & Requisito  \\
 \hline
@@ -62,7 +62,23 @@ lor{fondo}
 \multicolumn{2}{c}{\textbf{Requisito: RF-03} } \\
 \hline \hline
 \textbf{Nombre del Requisito} & Notificación en el retrovisor \\
-\textbf{Descripción} & El sistema avisará de que otro vehículo está en la zona de punto ciego mediante una notificación en el retrovisor.\\
+\textbf{Descripción} & El sistema avisará de que un objeto está en la zona de punto ciego mediante una notificación en el retrovisor del lado en el que se encuentra el objeto situado en el punto ciego.\\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Analista  \\
+\textbf{Prioridad} & Alta/Esencial  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 03}
+\label{tab:personal}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-03} } \\
+\hline \hline
+\textbf{Nombre del Requisito} & Formato notificación en el retrovisor \\
+\textbf{Descripción} & El sistema avisará de que un objeto está en el punto ciego mediante una señal luminosa.\\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Analista  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -77,13 +93,29 @@ lor{fondo}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-04} } \\
 \hline \hline
-\textbf{Nombre del Requisito} & Notificación sonora por vehículo en el punto ciego  \\
-\textbf{Descripción} &  Cuando el usuario active un intermitente, el sistema emitirá una señal sonora en el caso de que haya un vehículo en el punto ciego. \\
+\textbf{Nombre del Requisito} & Notificación sonora por vehículo en el punto ciego con el intermitente  \\
+\textbf{Descripción} &  Cuando el usuario active un intermitente, el sistema emitirá una señal sonora en el caso de que haya un vehículo en el punto ciego hacia dónde se va a girar. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
 \end{tabular}
 \caption{Requisito funcional 04}
+\label{tab:personal}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-03} } \\
+\hline \hline
+\textbf{Nombre del Requisito} & Formato notificación sonora del sistema de punto ciego\\
+\textbf{Descripción} & El sistema generará una notificación sonora que no superará los 40dB.\\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Analista  \\
+\textbf{Prioridad} & Alta/Esencial  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 03}
 \label{tab:personal}
 \end{center}
 \end{table}
@@ -96,8 +128,24 @@ lor{fondo}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-05} } \\
 \hline \hline
-\textbf{Nombre del Requisito} & Proximidad líneas de carril\\
-\textbf{Descripción} & El sistema debe detectar cuando el vehículo se acerca a las líneas límite del carril. \\
+\textbf{Nombre del Requisito} & Trayectoria carril\\
+\textbf{Descripción} & El sistema debe detectar la tayectoria que sigue el carril por el que se circula. \\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Cliente  \\
+\textbf{Prioridad} & Alta/Esencial  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 05}
+\label{tab:personal}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-05} } \\
+\hline \hline
+\textbf{Nombre del Requisito} & Trayectoria vehículo\\
+\textbf{Descripción} & El sistema deberá detectar la trayectoria que va a seguir el vehículo en función de la velocidad y el ángulo del volante. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -112,8 +160,8 @@ lor{fondo}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-06} } \\
 \hline \hline
-\textbf{Nombre del Requisito} &  Vibración del volante por proximidad al límite del carril\\
-\textbf{Descripción} & El sistema tendrá que hacer vibrar el volante cuando se detecta un acercamiento a las líneas de límite de carril. \\
+\textbf{Nombre del Requisito} &  Vibración del volante por diferencia de trayectorias\\
+\textbf{Descripción} & El sistema tendrá que hacer vibrar el volante cuando se detecta una desviación del 10\% entre las trayectorias del vehículo y la carretera. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Cliente  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -144,8 +192,24 @@ lor{fondo}
 \begin{tabular}{p{3,5cm} p{7cm}}
 \multicolumn{2}{c}{\textbf{Requisito: RF-06} } \\
 \hline \hline
+\textbf{Nombre del Requisito} &  Vibración del volante por diferencia de trayectorias\\
+\textbf{Descripción} & La cantidad de vibración se modificará a medida que el vehículo se va acercando a la línea de delimitación del carril. \\
+\textbf{Tipo} & Requisito  \\
+\textbf{Fuente del Requisito} & Analista  \\
+\textbf{Prioridad} & Alta/Esencial  \\ \hline
+\end{tabular}
+\caption{Requisito funcional 06}
+\label{tab:RF-06}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: RF-06} } \\
+\hline \hline
 \textbf{Nombre del Requisito} &  Corrección de la dirección por proximidad a las líneas de límite de carril\\
-\textbf{Descripción} & El sistema corregirá ligeramente la dirección del volante cuando detecte que el vehículo se aproxima a las líneas de límite de carril. \\
+\textbf{Descripción} & El sistema corregirá ligeramente la dirección del volante cuando detecte que el vehículo una desviación en la trayectoria superior al 15\%. \\
 \textbf{Tipo} & Requisito  \\
 \textbf{Fuente del Requisito} & Analista  \\
 \textbf{Prioridad} & Alta/Esencial  \\ \hline
@@ -173,6 +237,8 @@ lor{fondo}
 \label{tab:personal}
 \end{center}
 \end{table}
+
+
 
 \begin{table}[H]
 \begin{center}
@@ -540,7 +606,7 @@ lor{fondo}
 \end{table}
 
 
-\subsection{Requisitos de seguridad}
+\subsubsection{Requisitos de seguridad}
 
 \begin{table}[H]
 \begin{center}
