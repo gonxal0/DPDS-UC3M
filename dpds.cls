@@ -166,8 +166,8 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
     }\vskip-4.7ex\hskip-6.5ex\subsubsectionfont\color{auxiliar}
 }
 
-\setbeforesubsecskip{-1\onelineskip}
-\setaftersubsecskip{3\onelineskip}
+\setbeforesubsubsecskip{-1\onelineskip}
+\setaftersubsubsecskip{3\onelineskip}
 
 
 %%% STYLE OF PAGES NUMBERING
@@ -179,10 +179,10 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
     \makepagestyle{myruled}
     \makeheadrule {myruled}{\textwidth}{\normalrulethickness}
     \makefootrule {myruled}{\textwidth}{\normalrulethickness}{\footruleskip}
-    \makeevenhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{}
-    \makeoddhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{}
-    \makeevenfoot {myruled}{carlososm.com}{página \thepage}{}
-    \makeoddfoot {myruled}{carlososm.com}{página \thepage}{}
+    \makeevenhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{Dirección de Procesos del Desarrollo del Software}
+    \makeoddhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{Dirección de Procesos del Desarrollo del Software}
+    \makeevenfoot {myruled}{}{página \thepage}{}
+    \makeoddfoot {myruled}{}{página \thepage}{}
     \makeatletter % because of \@chapapp
     \makepsmarks {myruled}{
         \nouppercaseheads
