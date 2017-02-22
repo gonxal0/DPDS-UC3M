@@ -128,9 +128,6 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
     }\vskip-6ex\sectionfont\color{principal}
 }
 
-\def\@seccntformat#1{\hskip8em}
-\makeatother
-
 \setbeforesecskip{-1.5ex plus -.5ex minus -.2ex}
 \setaftersecskip{1.3ex plus .2ex}
 
@@ -144,10 +141,11 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
             outer sep=0pt,
             text=fondo,
             scale=1,
-            font=\sectionfont
+            font=\subsectionfont
         ]  at (2.2,-1.7)    {\thesubsection};
-    }\vskip-4.5ex\hskip-0.5ex\subsectionfont\color{secundario}
+    }\vskip-4.5ex\subsectionfont\color{secundario}
 }
+
 
 \setbeforesubsecskip{-1\onelineskip}
 \setaftersubsecskip{3\onelineskip}
@@ -161,13 +159,16 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
             outer sep=0pt,
             text=fondo,
             scale=1,
-            font=\sectionfont
-        ]  at (1,-1.7)    {\thesubsubsection};
-    }\vskip-4.7ex\hskip-6.5ex\subsubsectionfont\color{auxiliar}
+            font=\subsubsectionfont
+        ]  at (1.2,-1.7)    {\thesubsubsection};
+    }\vskip-5ex\subsubsectionfont\color{auxiliar}
 }
 
 \setbeforesubsubsecskip{-1\onelineskip}
 \setaftersubsubsecskip{3\onelineskip}
+
+\def\@seccntformat#1{\hskip8em}
+\makeatother
 
 
 %%% STYLE OF PAGES NUMBERING
