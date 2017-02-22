@@ -4,14 +4,14 @@
 \section{Establecimiento del Alcance del Sistema}
 
 \subsection{Valoración del Estudio de la Situación Actual}
-\par La empresa CARSAFETY tiene la necesidad de contratar el desarrollo de un sistema avanzado de seguridad en automóviles, el cual debe incluir: un control del punto ciego, un aviso de cambio de carril, una alerta de velocidad, una alerta por pérdida de atención, una llamada automática de emergencia y una alerta de precolisión.Para poder alcanzar correctamente dichas capacidades, será necesario definir cada uno de los objetivos y restricciones que puedan afectar al desarrollo del sistema.
+\par La empresa CARSAFETY tiene la necesidad de contratar el desarrollo de un sistema avanzado de seguridad en automóviles, el cual debe incluir: un control del punto ciego, un aviso de cambio de carril, una alerta de velocidad, una alerta por pérdida de atención, una llamada automática de emergencia y una alerta de precolisión. Para poder alcanzar correctamente dichas capacidades, será necesario definir cada uno de los objetivos y restricciones que puedan afectar al desarrollo del sistema.
 \par Existen varios objetivos que se desean cumplir con el desarrollo del proyecto:
 
 \begin{itemize}[-]
 \item Aumentar la seguridad en la conducción.
 \item Diferenciar a CARSAFETY de otras empresas gracias a incorporar este novedoso software.
 \item Desarrollar un producto software de calidad que se ajuste lo máximo posible a las necesidades del usuario.
-\end {itemize}
+\end{itemize}
 
 \par En las primeras conversaciones con el cliente no se han establecido restricciones económicas. Se le ha presentado un presupuesto orientativo para que tenga una noción sobre el coste que tiene desarrollar el software y éste ha sido aprobado. Además, el cliente es consciente y ha sido informado de que si durante el desarrollo del proyecto van surgiendo costes adicionales que no se habían contemplado en un principio, será necesario aumentar los costes iniciales previstos.
 \par Durante el desarrollo del software no se espera encontrar ninguna restricción legal que pueda afectar a la implementación del software ya que siempre trabajamos dentro del ámbito legal. En el caso de encontrar algún problema legal durante el desarrollo del proyecto se consultará con abogados y se procederá según sea conveniente.
@@ -19,13 +19,13 @@
 
 
 \subsection {Identificación del alcance del sistema}
-\par En este apartado, se explicará las capacidades que va a tener el sistema desarrollado para poder resolver correctamente las necesidades que el cliente, CARSAFETY, ha planteado.
+\par En este apartado, se explicará las capacidades que va a tener el sistema desarrollado para poder resolver correctamente las necesidades que el cliente, CARSAFETY, ha planteado. Debido a que vamos a desarrollar un producto que sólo va a ser implantado en los vehículos que fabrica CARSAFETY, no se plantea la posibilidad de que el sistema sea escalable a otros. Si otras empresas quisieran implementar también el software, bajo la aprobación de CARSAFETY, serían ellas las que tendrían que adaptar sus vehículos al software.
 \par El sistema tiene que proporcionar una solución de seguridad al conductor que cubra los siguientes puntos: un control del punto ciego, un aviso de cambio de carril, una alerta de velocidad, una alerta por pérdida de atención, una llamada automática de emergencia y una alerta de precolisión.
 \par A continuación, se identifican las capacidades generales que tiene que contener cada uno de los subsistemas definidos:
 
 \begin{itemize}[-]
 \item \textbf{Control del punto ciego}
-\par Este problema consiste en poder identificar a los vehículos que se van acercando, ya que cuando un vehículo se encuentra detrás y al lado de otro automóvil, no es posible identificarlo correctamente con ninguno de los espejos disponibles. Para poder gestionar correctamente el punto ciego, se instalarán cámaras en la parte trasera del automóvil que permitan vigilar lo que sucede en la parte trasera del vehículo. El sistema software analizará cada una de las imágenes de la cámara y en caso de que haya un vehiculo en esta zona, se notificará al conductor a traves de los espejos retrovisores. 
+\par Este problema consiste en poder identificar a los vehículos que se van acercando, ya que cuando un vehículo se encuentra detrás y al lado de otro automóvil, no es posible identificarlo correctamente con ninguno de los espejos disponibles. Para poder gestionar correctamente el punto ciego, se instalarán cámaras en la parte trasera del automóvil que permitan vigilar lo que sucede en la parte trasera del vehículo. El sistema software analizará cada una de las imágenes de la cámara y en caso de que haya un vehículo en esta zona, se notificará al conductor a través de los espejos retrovisores.
 \item \textbf{Cambio de carril}
 \par Cuando el conductor se encuentra circulando, de forma inconsciente, hay veces en que se aproxima demasiado al carril contrario, cruzando la línea que lo delimita llegando a invadirlo completamente. Se instalará una cámara detrás del espejo retrovisor del vehículo, la cual enviará al software imágenes de manera continua, y cuando el vehículo se esté aproximando a la línea de delimitación del carril, el software avisará al conductor mediante una vibración en el volante. Para poder determinar si el conductor está cambiando de carril, el software registrará los movimientos del volante así como la velocidad y trayectoria del vehículo. El sistema sólo funcionará cuando el conductor alcance velocidades propias de una autopista (mínimo 60 km/h) y se desactivará si se utiliza el intermitente.
 \item \textbf{Alertas de velocidad}
@@ -65,4 +65,8 @@ es el equipo encargado de desarrollar los requisitos establecidos. El equipo de 
 \par Es la persona que financia y contrata el proyecto. Una vez el proyecto haya sido desarrollado y entregado al cliente, éste se encargará de explotarlo para obtener beneficios económicos y poder recuperar su inversión. El cliente en este proyecto es CARSAFETY.
 \item \textbf{Usuario}
 \par Es la persona que realmente utilizará el software desarrollado y el que se beneficiará de su uso. Los usuarios serán aquellos que utilicen un automóvil fabricado por CARSAFETY que tenga incorporado el software de seguridad.
+\item \textbf{Viandante}
+\par Es la persona que viaja a pie por la calle. Esta persona también se beneficiará del software ya que si aumentamos la seguridad en los vehículos, habrá menos posibilidades de que los viandantes sufran accidentes debido a distracciones de los conductores.
+\item \textbf{Otros conductores}
+\par Los otros conductores que circulen por la vía también se beneficiarán del software, aunque ellos no lo tengan instalado. En la mayoría de accidentes hay dos partes implicadas, por lo que se podrá evitar muchos de los accidentes que se producirían ya que uno de los vehículos tendrá una mejora en la seguridad. 
 \end{itemize}
