@@ -15,6 +15,9 @@
 #Ignore compiled PDF
 *.pdf
 
-#Ignore cosas turbias del Mac de Alberto
+# Ignore cosas turbias del Mac de Alberto
 *.fdb_latexmk
 *.fls
+
+# Exception in logouc3m.pdf
+!logouc3m.pdf
