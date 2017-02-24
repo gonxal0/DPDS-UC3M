@@ -1,7 +1,7 @@
 \subsection{Alternativa I}
 
 \par Para esta primera alternativa se le ha propuesto al cliente que sistema central esté controlado por una Raspberry Pi 3B. Dado que las Raspberry no vienen con sistema operativo instalado, se ha considerado la opción de instalar Raspbian Jessie with Pixel para poder procesar toda la información.
-\par Para poder procesar las imágenes se utilizará un System-on-Chip con FPGA. Con un solo FPGA controlaremos el punto ciego, las alertas de velocidad, el sistema de precolisión y el cambio de carril, ya que es un sistema muy potente que es capaz de procesar las imágenes recibidas de los cuatro subsistemas.
+\par Para poder procesar las imágenes se utilizará un System-on-Chip con FPGA. Con un solo FPGA controlaremos el punto ciego, las alertas de velocidad, el sistema de precolisión y el cambio de carril, ya que es un sistema muy potente que es capaz de procesar las imágenes recibidas de los cuatro subsistemas. Las placas FPGA compartirán los datos con la Raspberry mediante un puerto Ethernet, el cual se rige bajo el estándar IEEE 802.3an.
 \par Los mapas del país vendrán instalados ya en el sistema operativo, gracias a la librería compatible con Raspbian llamada Tangram.
 
 \par A continuación se detallan las alternativas propuestas para cada uno de los subsistemas:
