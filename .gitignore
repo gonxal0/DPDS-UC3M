@@ -19,5 +19,6 @@
 *.fdb_latexmk
 *.fls
 
-# Exception in logouc3m.pdf
-!logouc3m.pdf
+# Exception in logos
+!s3.pdf
+!s3long.pdf
