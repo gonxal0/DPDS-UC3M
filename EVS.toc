@@ -27,20 +27,23 @@
 \contentsline {subsubsection}{\numberline {III.3.2}Requisitos de interfaz de comunicaci\IeC {\'o}n}{31}{subsubsection.0.3.3.2}
 \contentsline {subsubsection}{\numberline {III.3.3}Requisitos de interfaz de software}{32}{subsubsection.0.3.3.3}
 \contentsline {section}{\numberline {IV}Estudio de las alternativas de soluci\IeC {\'o}n}{33}{section.0.4}
-\contentsline {subsection}{\numberline {IV.1}Alternativa I}{35}{subsection.0.4.1}
-\contentsline {subsection}{\numberline {IV.2}Alternativa II}{38}{subsection.0.4.2}
-\contentsline {subsection}{\numberline {IV.3}Alternativa III}{39}{subsection.0.4.3}
-\contentsline {section}{\numberline {V}Valoraci\IeC {\'o}n de las alternativas}{43}{section.0.5}
-\contentsline {subsection}{\numberline {V.1}Gesti\IeC {\'o}n de riesgo}{43}{subsection.0.5.1}
-\contentsline {subsubsection}{\numberline {V.1.1}Alternativa I}{43}{subsubsection.0.5.1.1}
-\contentsline {subsubsection}{\numberline {V.1.2}Alternativa II}{43}{subsubsection.0.5.1.2}
-\contentsline {subsubsection}{\numberline {V.1.3}Alternativa III}{44}{subsubsection.0.5.1.3}
-\contentsline {subsection}{\numberline {V.2}Viabilidad econ\IeC {\'o}mica}{44}{subsection.0.5.2}
-\contentsline {section}{\numberline {VI}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n}{45}{section.0.6}
-\contentsline {subsection}{\numberline {VI.1}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n a cada subsistema}{45}{subsection.0.6.1}
-\contentsline {subsubsection}{\numberline {VI.1.1}Sistema de comunicaci\IeC {\'o}n general}{45}{subsubsection.0.6.1.1}
-\contentsline {subsubsection}{\numberline {VI.1.2}Aviso de cambio de carril}{45}{subsubsection.0.6.1.2}
-\contentsline {subsubsection}{\numberline {VI.1.3}Control de punto ciego}{46}{subsubsection.0.6.1.3}
-\contentsline {subsubsection}{\numberline {VI.1.4}Alerta de velocidad}{46}{subsubsection.0.6.1.4}
-\contentsline {subsubsection}{\numberline {VI.1.5}Alertas de precolisi\IeC {\'o}n}{47}{subsubsection.0.6.1.5}
-\contentsline {subsection}{\numberline {VI.2}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n global}{47}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {IV.1}Subsistemas de alternativa \IeC {\'u}nica}{34}{subsection.0.4.1}
+\contentsline {subsubsection}{\numberline {IV.1.1}Llamada de emergencia}{34}{subsubsection.0.4.1.1}
+\contentsline {subsubsection}{\numberline {IV.1.2}P\IeC {\'e}rdida de atenci\IeC {\'o}n}{34}{subsubsection.0.4.1.2}
+\contentsline {subsection}{\numberline {IV.2}Alternativa I}{35}{subsection.0.4.2}
+\contentsline {subsection}{\numberline {IV.3}Alternativa II}{38}{subsection.0.4.3}
+\contentsline {subsection}{\numberline {IV.4}Alternativa III}{40}{subsection.0.4.4}
+\contentsline {section}{\numberline {V}Valoraci\IeC {\'o}n de las alternativas}{44}{section.0.5}
+\contentsline {subsection}{\numberline {V.1}Gesti\IeC {\'o}n de riesgo}{44}{subsection.0.5.1}
+\contentsline {subsubsection}{\numberline {V.1.1}Alternativa I}{44}{subsubsection.0.5.1.1}
+\contentsline {subsubsection}{\numberline {V.1.2}Alternativa II}{44}{subsubsection.0.5.1.2}
+\contentsline {subsubsection}{\numberline {V.1.3}Alternativa III}{45}{subsubsection.0.5.1.3}
+\contentsline {subsection}{\numberline {V.2}Viabilidad econ\IeC {\'o}mica}{45}{subsection.0.5.2}
+\contentsline {section}{\numberline {VI}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n}{46}{section.0.6}
+\contentsline {subsection}{\numberline {VI.1}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n a cada subsistema}{46}{subsection.0.6.1}
+\contentsline {subsubsection}{\numberline {VI.1.1}Sistema de comunicaci\IeC {\'o}n general}{46}{subsubsection.0.6.1.1}
+\contentsline {subsubsection}{\numberline {VI.1.2}Aviso de cambio de carril}{46}{subsubsection.0.6.1.2}
+\contentsline {subsubsection}{\numberline {VI.1.3}Control de punto ciego}{47}{subsubsection.0.6.1.3}
+\contentsline {subsubsection}{\numberline {VI.1.4}Alerta de velocidad}{47}{subsubsection.0.6.1.4}
+\contentsline {subsubsection}{\numberline {VI.1.5}Alertas de precolisi\IeC {\'o}n}{48}{subsubsection.0.6.1.5}
+\contentsline {subsection}{\numberline {VI.2}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n global}{48}{subsection.0.6.2}
