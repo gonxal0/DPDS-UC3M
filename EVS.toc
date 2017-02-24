@@ -47,3 +47,5 @@
 \contentsline {subsubsection}{\numberline {VI.1.4}Alerta de velocidad}{50}{subsubsection.0.6.1.4}
 \contentsline {subsubsection}{\numberline {VI.1.5}Alertas de precolisi\IeC {\'o}n}{51}{subsubsection.0.6.1.5}
 \contentsline {subsection}{\numberline {VI.2}Selecci\IeC {\'o}n de la soluci\IeC {\'o}n global}{51}{subsection.0.6.2}
+\contentsline {chapter}{\'{I}ndice de figuras}{53}{section*.2}
+\contentsline {chapter}{\'{I}ndice de cuadros}{53}{section*.3}
