@@ -180,8 +180,8 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
     \makepagestyle{myruled}
     \makeheadrule {myruled}{\textwidth}{\normalrulethickness}
     \makefootrule {myruled}{\textwidth}{\normalrulethickness}{\footruleskip}
-    \makeevenhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{Dirección de Procesos del Desarrollo del Software}
-    \makeoddhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{Dirección de Procesos del Desarrollo del Software}
+    \makeevenhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{Dirección de Proyectos del Desarrollo del Software}
+    \makeoddhead {myruled}{\includegraphics[width=0.05\textwidth]{#1}}{}{Dirección de Proyectos del Desarrollo del Software}
     \makeevenfoot {myruled}{}{página \thepage}{}
     \makeoddfoot {myruled}{}{página \thepage}{}
     \makeatletter % because of \@chapapp
