@@ -8,6 +8,9 @@
 
 # Ignore .out
 *.out
+*.lot
+*.lof
+*.toc
 
 # Ignore .syntex.gz
 *.syn*
