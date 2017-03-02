@@ -371,6 +371,7 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT ./img/s3-cabecera.png
 INPUT ./img/s3-cabecera.png
 INPUT ./img/s3-cabecera.png
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/eurosym/feybr10.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/eurosym/feymr10.tfm
 INPUT ./img/s3-cabecera.png
 INPUT ./img/s3-cabecera.png
@@ -390,14 +391,14 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/eurosym/feymr10.tfm
 INPUT ./img/s3-cabecera.png
 INPUT ./img/s3-cabecera.png
-INPUT ./img/s3-cabecera.png
-INPUT ./img/s3-cabecera.png
 INPUT costes.aux
 INPUT ./costes.out
 INPUT ./costes.out
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmb10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb
