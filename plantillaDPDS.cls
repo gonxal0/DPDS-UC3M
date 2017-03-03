@@ -69,9 +69,10 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 
 % PDF VIEW
+\setlength{\headsep}{1cm}
 \geometry{total={210mm,297mm},
 left=20mm,right=20mm,
-bindingoffset=0mm, top=20mm, bottom=35mm}
+bindingoffset=0mm, top=25mm, bottom=35mm, headsep=1cm}
 % PRINT
 %\geometry{total={210mm,297mm},
 %left=20mm,right=20mm,
