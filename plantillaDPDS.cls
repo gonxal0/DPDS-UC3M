@@ -69,9 +69,10 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 
 % PDF VIEW
+\setlength{\headsep}{1cm}
 \geometry{total={210mm,297mm},
 left=20mm,right=20mm,
-bindingoffset=0mm, top=20mm, bottom=35mm}
+bindingoffset=0mm, top=25mm, bottom=35mm, headsep=1cm}
 % PRINT
 %\geometry{total={210mm,297mm},
 %left=20mm,right=20mm,
@@ -224,3 +225,27 @@ bindingoffset=0mm, top=20mm, bottom=35mm}
 
 %tabular
 \renewcommand{\arraystretch}{1.5}%
+
+% Firmas
+\newcommand{\signL}[3]{
+	\begin{flushleft}
+    \ifx&#3& %if #3 argument is empty
+
+	\else
+	\includegraphics[width=0.4\textwidth]{#3}\\ %Signature Image
+	\fi
+	\bfseries #1 %Name, surname
+	\mdseries \\#2 %Position
+	\end{flushleft}
+}
+\newcommand{\signR}[3]{
+	\begin{flushright}
+    \ifx&#3& %if #3 argument is empty
+    
+	\else
+	\includegraphics[width=0.4\textwidth]{#3}\\ %Signature Image
+	\fi
+	\bfseries #1 %Name, surname
+	\mdseries \\#2 %Position
+	\end{flushright}
+}
