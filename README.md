@@ -17,4 +17,4 @@ Documentos contenidos:
 + Proyecto completo: compilar "SmartSoftwareSolutions.tex" con pdftex y bibtex
 + Oferta: compilar "S3_Oferta.tex" con pdftex y bibtex
 + Costes: compilar "S3_Costes.tex" con pdftex y bibtex
-+ Viabilidad: (EVS) compilar "S3_EVS.tex" con pdftex y bibtex
++ Viabilidad (EVS): compilar "S3_EVS.tex" con pdftex y bibtex

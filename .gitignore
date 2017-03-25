@@ -22,6 +22,10 @@
 *.fdb_latexmk
 *.fls
 
+# Ignore bibliography aux
+*.bbl
+*.blg
+
 # Exception in logos
 !s3.pdf
 !s3long.pdf
