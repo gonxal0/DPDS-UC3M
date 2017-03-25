@@ -1,4 +1,43 @@
 \section{Requisitos}
+\par A continución se va a proceder a explicar en detalle cada uno de los requisitos que se han identificado y que por tanto deberán ser satisfechos por el sistema. Para seguir un formato unificado para todos los requisitos, se ha decidido utilizar la siguiente plantilla:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{7cm}}
+\multicolumn{2}{c}{\textbf{Requisito: XX-YY} } \\
+\hline \hline
+\textbf{Nombre del Requisito} &   \\
+\hline
+\textbf{Descripción} &  \\
+\hline
+\textbf{Tipo} &   \\
+\hline
+\textbf{Fuente del Requisito} &   \\
+\hline
+\textbf{Prioridad} &   \\ \hline
+\end{tabular}
+\caption{Plantilla requisitos}
+\label{tab:Plantilla-Requisitos}
+\end{center}
+\end{table}
+
+\par En esta tabla se detallan los siguientes apartados:
+\begin{itemize}[-]
+\item \textbf{Requisito XX-YY: }
+\par El codigo asignado a cada uno de los requisitos será una sigla correspondiente al tipo de requisito. Por lo tanto puede haber: RF (Requisito Funcional), RNF (Requisito No Funcional) y RI (Requisito de Interfaz). Las dos cifras siguientes corresponderan al numero de requisito dentro de cada uno de los apartados.
+\item \textbf{Nombre del Requisito: }
+\par Se especificará un nombre para el requisito que lo identifique unequivocamente.
+\item \textbf{Descripción: }
+\par Se realizará una descripción detallada y concisa del requisito en sí.
+\item \textbf{Tipo: }
+\par Los Requisitos Funcionales y los Requisitos de Interfaz se clasificarán como de tipo requisito, mientras que los Requisitos No Funcionales se clasificarán como de tipo restricción.
+\item \textbf{Fuente del Requisito: }
+\par En este punto se especificará la fuente del requisito, pudiendo ser del cliente o como el resultado del analisis del proyecto por parte del analista.
+\item \textbf{Prioridad: }
+\par La prioridad de un requisito se varía según sea un requisito cuya fuente ha sido el cliente y es una parte esencial que este ultimo comporobará, o bien, si es un requisito opcional que estaría bien su implementación pero no es necesario para el exito del proyecto.
+\end{itemize}
+
+\newpage
+
 \subsection{Requisitos funcionales}
 
 
@@ -898,7 +937,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} &  El sistema debe realizar el 98\% de las operaciones en menos de 0,005 segundos.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -918,7 +957,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El sistema debe ser capaz de dar soporte simultaneo a todo el hardware.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -938,7 +977,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El sistema tiene que funcionar en condiciones de baja luminosidad.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -958,7 +997,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El sistema tiene que funcionar en condiciones climatológicas adversas.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -981,7 +1020,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El software que controla al vehículo no puede ser alterado a excepción de personas autorizadas.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1001,7 +1040,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & Toda la información personal del usuario deberá ser cifrada con RSA-256.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1023,7 +1062,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} &  El software encargado de identificar las señales reconocerá las señales con al menos 85\% de tasa de acierto.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1043,7 +1082,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El software encargado de detectar los coches situados en el punto ciego reconocerá estos casos con al menos un 97\% de tasa de acierto.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1063,7 +1102,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El software encargado de realizar la e-call deberá responder con un 100\% de tasa de acierto.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1083,7 +1122,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} &  El software encargado de detectar el cambio involuntario de carril reconocerá este hecho con un 87\% de tasa de acierto.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1103,7 +1142,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} &  El software encargado de detectar la falta de atención contará con un 93\% de tasa de acierto.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1123,7 +1162,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El software encargado de detectar el pre-crash deberá tener un 98\% de tasa de acierto.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1146,7 +1185,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El software deberá estar siempre disponible cuando se arranque el vehículo.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1169,7 +1208,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El sistema recibirá labores de mantenimiento cada 6 meses por profesionales cualificados.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1189,7 +1228,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & El software contará con un registro que guardará los fallos del sistema.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1211,7 +1250,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & La base de datos de señales se deberá corresponder con las señales de la normativa del país por donde circula el vehículo.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
@@ -1231,7 +1270,7 @@ textbf{Prioridad} & Alta/Esencial  \\ \hline
 \hline
 \textbf{Descripción} & Las notificaciones de los subsistemas deben estar disponibles en: Español, Inglés, Francés, Alemán, Italiano, Chino y Árabe.\\
 \hline
-\textbf{Tipo} & Requisito  \\
+\textbf{Tipo} & Restricción  \\
 \hline
 \textbf{Fuente del Requisito} & Analista  \\
 \hline
