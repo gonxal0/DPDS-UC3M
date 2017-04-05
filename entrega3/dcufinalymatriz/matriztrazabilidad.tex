@@ -1,0 +1,69 @@
+\section{Matriz de trazabilidad}
+\par Con el fin de optimizar la extensión de la matriz de trazabilidad, se va a usar la siguiente nomenclatura para referenciar a los casos de uso:
+
+\begin{itemize}[-]
+\item \textbf{CDU-01:} Activar Notificación de Punto Ciego en el Retrovisor.
+\item \textbf{CDU-02:} Activar Notificación Sonora de Punto Ciego.
+\item \textbf{CDU-03:} Hacer Vibrar el Volante.
+\item \textbf{CDU-04:}Corregir el Volante.
+\item \textbf{CDU-05:} Activar notificación por velocidad máxima.
+\item \textbf{CDU-06:} No Superar Límite de Velocidad.
+\item \textbf{CDU-07:} Desactivar Notificaciones.
+\item \textbf{CDU-08:} Activar Notificación de Descanso.
+\item \textbf{CDU-09:} CDU-10: Detener Vehículo.
+\item \textbf{CDU-10:} Realizar Llamada de Emergencia.
+\item \textbf{CDU-11:} Activar notificación por riesgo de colisión.
+\item \textbf{CDU-12:} Preparar vehículo para impacto.
+\item \textbf{CDU-13:} Reducir velocidad.
+\end{itemize}
+
+\begin{center}
+\begin{longtable}{ c || c c c c c c c c c c c c c  }
+	 & CDU-01 & CDU-02 & CDU-03 & CDU-04 & CDU-05 & CDU-06 & CDU-07 & CDU-08 & CDU-09 & CDU-10 & CDU-11 & CDU-12 & CDU-13 \\ \hline \hline
+	RF-01 & X & X &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-02 & X & X &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-03 & X &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-04 &  & X &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-05 &  &  & X & X &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-06 &  &  & X & X &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-07 &  &  & X &  &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-08 &  &  & X & X &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-09 &  &  & X & X &  &  &  &  &  &  &  &  &  \\ \hline
+	RF-10 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-11 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-12 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-13 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-14 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-15 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-16 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-17 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-18 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-19 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-20 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-21 &  &  &  &  & X & X &  &  &  &  &  &  &  \\ \hline
+	RF-22 &  &  &  &  &  & X &  &  &  &  &  &  &  \\ \hline
+	RF-23 &  &  &  &  &  &  & X &  &  &  &  &  &  \\ \hline
+	RF-24 &  &  &  &  &  &  & X &  &  &  &  &  &  \\ \hline
+	RF-25 &  &  &  &  &  &  &  & X &  &  &  &  &  \\ \hline
+	RF-26 &  &  &  &  &  &  &  & X &  &  &  &  &  \\ \hline
+	RF-27 &  &  &  &  &  &  &  & X &  &  &  &  &  \\ \hline
+	RF-28 &  &  &  &  &  &  &  &  & X &  &  &  &  \\ \hline
+	RF-29 &  &  &  &  &  &  &  &  &  & X &  &  &  \\ \hline
+	RF-30 &  &  &  &  &  &  &  &  &  & X &  &  &  \\ \hline
+	RF-31 &  &  &  &  &  &  &  &  &  & X &  &  &  \\ \hline
+	RF-32 &  &  &  &  &  &  &  &  &  & X &  &  &  \\ \hline
+	RF-33 &  &  &  &  &  &  &  &  &  & X &  &  &  \\ \hline
+	RF-34 &  &  &  &  &  &  &  &  &  &  & X &  &  \\ \hline
+	RF-35 &  &  &  &  &  &  &  &  &  &  & X &  &  \\ \hline
+	RF-36 &  &  &  &  &  &  &  &  &  &  & X &  &  \\ \hline
+	RF-37 &  &  &  &  &  &  &  &  & X &  &  &  &  \\ \hline
+	RF-38 &  &  &  &  &  &  &  &  &  &  &  & X & X \\ \hline
+	RF-39 &  &  &  &  &  &  &  &  &  &  &  & X &  \\ \hline
+	RF-40 &  &  &  &  &  &  &  &  &  &  &  & X &  \\ \hline
+	RF-41 &  &  &  &  &  &  &  &  &  &  &  & X &  \\ \hline
+	RF-42 &  &  &  &  &  &  &  &  &  &  &  & X &  \\ \hline
+	RF-43 &  &  &  &  &  &  &  &  &  &  &  & X &  \\ \hline
+\caption{Matriz de Trazabilidad de casos de uso}
+\label{tab:matriztraz}
+\end{longtable}
+\end{center}
