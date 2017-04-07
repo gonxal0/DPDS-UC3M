@@ -11,6 +11,7 @@
 \RequirePackage{geometry}
 \RequirePackage{eurosym}
 \RequirePackage{url}
+\RequirePackage{lscape}
 
 \RequirePackage[dvips]{graphicx}
 \RequirePackage{xcolor}
