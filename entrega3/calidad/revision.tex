@@ -1,32 +1,18 @@
 \section{Revisión de la Verificación de la Arquitectura del Sistema}
 \subsection{Revisión de la Consistencia entre Productos del Diseño}
-\par Adriana Lima como Responsable de Calidad deberá realizar la revisión de la consistencia entre Productos del Diseño. Para ello se seguirán las pautas establecidas por Métrica 3, esto implica:
-\begin{itemize}[-]
-  \item \textbf{Coherencia interna:} se comprueba la coherencia del conjunto de ventanas (si las hubiera), con el Diagrama de Diálogo de Ventanas, sus identificadores y sus nombres. Se comprueba que se han seguido los criterios del Plan de Gestión de Configuración en el nombrado de las ventanas, y los literales asociados a los campos.
-  \item \textbf{Coherencia externa:} se comprueba que existe una relación completa entre las ventanas (si las hubiera) y el Diagrama de Diálogo de ventanas con las especificaciones funcionales. Para ello se utiliza una matriz de trazabilidad que asocie las ventanas con las especificaciones funcionales. Además se comprueba que las ventanas siguen los diseños previstos.
-  \item \textbf{Completo:} se comprueba que se han definido todas las ventanas y sus formatos. También se comprueba que se han diseñado todas las acciones que pueden desencadenarse desde una ventana, y que todos sus campos están diseñados.
-  \item \textbf{Comunicable:} se comprueba que las ventanas están bien estructuradas, siguiendo los estándares de estilo que marque el Plan de Calidad, y son fáciles de comprender por el usuario. Se verifica que los textos de las ventanas utilizan un lenguaje claro, conciso y comprensible por el usuario final.
-\end{itemize}
 
-\par Los aspectos a revisar del análisis de los subsistemas de diseño son:
-
-\begin{itemize}[-]
-  \item \textbf{Coherencia interna:} se comprueba que todos los requerimientos están contemplados y que no hay redundancias. La comprobación se lleva a cabo creando una matriz de trazabilidad entre los requisitos del sistema y los subsistemas que lo cubren, de forma que todos los requisitos tengan al menos un subsistema que los cubra y todos los subsistemas cubran directa o indirectamente algún requisito del sistema.
-  \item \textbf{Coherencia externa:} se comprueba que cada componente refleja la funcionalidad que le corresponde según los requisitos que cubre.
-  \item \textbf{Completo:} se comprueba que el análisis cubre todos los componentes de alto nivel identificados.
-  \item \textbf{Comunicable:} se comprueba que los diagramas se leen con facilidad, que se han seguido los estándares marcados en el Plan de Aseguramiento de Calidad, y que la descripción de los componentes utiliza un lenguaje claro y comprensible.
-\end{itemize}
-
-\par Para el diseño detallado se comprueba:
-
-\begin{itemize}[-]
-  \item \textbf{Coherencia interna:} se comprueba que todos los subsistemas de alto nivel han sido descompuestos y detallados en componentes. Además se comprueba que los componentes diseñados cumplen con los requerimientos. Para estas comprobaciones se realiza una matriz de trazabilidad de componentes con los subsistemas a los que pertenecen y una matriz de trazabilidad de componentes con los requisitos que cubren.
-  \item \textbf{Coherencia externa:} se comprueba que el componente refleja la funcionalidad que le corresponde de acuerdo a los requisitos que le afectan.
-  \item \textbf{Completo:} se comprueba que se han incluido en el diseño detallado todos los componentes identificados para cada subsistema, a través de la matriz de trazabilidad entre componentes y subsistemas de diseño.
-  \item \textbf{Comunicable:} se comprueba que los diagramas se leen con facilidad y que se ajustan a los estándares especificados en el Plan de Aseguramiento de Calidad. Se comprueba también que las definiciones de los diagramas utilizan un lenguaje claro y comprensible.
+\par Adriana Lima como Responsable de Calidad deberá realizar la revisión de la consistencia entre Productos del Diseño. Para ello se seguirán las pautas establecidas por el documento de Revisión Sistemática de Métricas de Diseño Orientado a Objetos de Juan José Olmedilla, ya que el documento de Métrica 3 no está orientado a objetos. Esto implica cumplir las siguientes pautas:
+\begin{itemize}
+\item \textbf{Funcionalidad}: se comprueba que la capacidad del software debe proveer las funciones que cumplen con las necesidades implícitas y explícitas cuando el mismo es utilizado bajo ciertas condiciones.
+\item \textbf{Fiabilidad}: la capacidad del software de mantener un nivel específico de rendimiento bajo determinadas condiciones de uso.
+\item \textbf{Usabilidad}:la capacidad del producto software de ser entendido, aprendido, usado y atractivo al usuario, cuando se usa bajo ciertas condiciones.
+\item \textbf{Eficiencia}:la capacidad del software de ofrecer el rendimiento apropiado con respecto a la cantidad de recursos utilizados, bajo condiciones prefijadas.
+\item \textbf{Mantenibilidad}:la capacidad del producto de ser modificado. Dichas modificaciones pueden incluir correcciones, mejoras o adaptaciones a cambios en el entorno y en los requisitos y especificaciones funcionales.
+\item \textbf{Portabilidad}:la capacidad del software de ser trasladado de un entorno (informático) a otro.
 \end{itemize}
 
 \par Como resultado de esta revisión, se debe generar un Informe de Auditoría que recoja la aceptación o no de la Arquitectura del Sistema y las causas del rechazo en caso de que se produzca.
+
 
 \subsection{Registro de la Aceptación de la Arquitectura del Sistema}
 \par Cuando se haya realizado la revisión de la Arquitectura del Sistema, deberá registrarse en este documento la aceptación para que quede constancia que dicho diseño ha sido aprobado por el Responsable de Calidad y que por tanto cumple con los requisitos de Calidad establecidos en el Plan de Aseguramiento de Calidad. Además deberá generarse un Informe de Auditoría que en caso de rechazo deberá contener las causas de la no aceptación de la Arquitectura del Sistema.
