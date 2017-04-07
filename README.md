@@ -18,3 +18,29 @@ Documentos contenidos:
 + Oferta: compilar "S3_Oferta.tex" con pdftex y bibtex
 + Costes: compilar "S3_Costes.tex" con pdftex y bibtex
 + Viabilidad (EVS): compilar "S3_EVS.tex" con pdftex y bibtex
+
+Para crear tablas rápido:
+-------------------------
+1. Pegar la tabla en un excel
+1. En la página excel2latex.com se te crea la tabla en formato LaTeX.
+1. Copiar y pegar esa tabla en el documento.
+1. Sustituir
+
+```
+\begin{array}{ | l | l | l | l | l | l | l | }
+.....
+\end{array}
+```
+por:
+
+```
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ l l l l l l l l l l }
+.....
+\end{tabular}
+\caption{Titulo de la tabla.}
+\label{tab:etiqueta}
+\end{center}
+\end{table}
+```
