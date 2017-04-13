@@ -13,6 +13,7 @@
 \RequirePackage{url}
 \RequirePackage{lscape}
 
+
 \RequirePackage[dvips]{graphicx}
 \RequirePackage{xcolor}
 \RequirePackage{times}
@@ -68,6 +69,49 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \definecolor{textoResaltado}{RGB}{90, 202, 191}
 \definecolor{textoAuxiliar}{RGB}{27, 152, 224}
 
+
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+
+\RequirePackage{listings}
+\lstset{ frame=Ltb,
+     framerule=0pt,
+     aboveskip=0.5cm,
+     framextopmargin=3pt,
+     framexbottommargin=3pt,
+     framexleftmargin=0.4cm,
+     framesep=0pt,
+     rulesep=.4pt,
+     backgroundcolor=\color{gray97},
+     rulesepcolor=\color{black},
+     texcl=true,
+     %
+     stringstyle=\ttfamily,
+     showstringspaces = false,
+     basicstyle=\small\ttfamily,
+     commentstyle=\color{gray45},
+     keywordstyle=\bfseries,
+     %
+     numbers=left,
+     numbersep=3pt,
+     numberstyle=\tiny,
+     numberfirstline = false,
+     breaklines=true,
+   }
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+   {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{consola}
+   {basicstyle=\ttfamily,
+    backgroundcolor=\color{gray75},
+   }
+
+\lstdefinestyle{C}
+   {language=C,
+   }
 
 
 % PDF VIEW
