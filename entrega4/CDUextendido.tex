@@ -104,7 +104,11 @@ de circulación(RF-16)}}\newline
 Propósito & El propósito de este caso de uso es notificar al conductor cuando el vehículo supero la velocidad máxima permitida en la vía.\\ \hline
 Precondiciones &  \tabitem El vehículo ha detectado cual es la velocidad máxima a la que se puede circular por la vía actual. \\ \hline
 Postcondiciones & \tabitem Se muestra en el panel la velocidad máxima. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 05}
@@ -133,7 +137,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es poner en marcha todos los mecanismos convenientes en el caso de detectar una colisión inminente (reducir la velocidad, ajustar los cinturones, cerrar las ventanillas, etc.). \\ \hline
 Precondiciones &  \tabitem El sistema detecta una colisión inminente (la probabilidad de evitar un obstáculo es menor del 70\%) \\ \hline
 Postcondiciones &  \tabitem El sistema reduce la velocidad del vehículo. \newline \tabitem El sistema ajusta los cinturones de seguridad \newline \tabitem El sistema fija los asientos \newline \tabitem El sistema cierra las ventanillas \newline \tabitem Si se evita el accidente se deshacen las acciones. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 12}
@@ -158,7 +166,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es notificar al conductor del vehículo cuando existe un elevado riesgo de sufrir una colisión. \\ \hline
 Precondiciones &  \tabitem El sistema detecta una colisión con una probabilidad del 50\% \\ \hline
 Postcondiciones &  \tabitem El sistema emite una notificación. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 11}
@@ -181,7 +193,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es reducir la velocidad del vehículo en el que está instalado CARSEAFTY en caso de detectar una posible colisión. \\ \hline
 Precondiciones &  \tabitem El sistema detecta una colisión inminente (la probabilidad de evitar un obstáculo es menor del 70\%) \\ \hline
 Postcondiciones &  \tabitem El sistema reduce la velocidad del vehículo. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato extendido 13}
@@ -205,7 +221,11 @@ Referencias &
 Propósito & El propósito de este caso de uso detener el vehículo en el que está instalado el sistema CARSEAFTY en caso de detectar una colisión inminente, si el conductor ha perdido la atención o si hay una posible colisión y el conductor pisa el freno. \\ \hline
 Precondiciones &  \tabitem El conductor no recupera la atención tras más de tres segundos de emisión de señales acústicas. \newline \tabitem Se ha recibido una notificación por colisión y el conductor ha pisado el freno. \\ \hline
 Postcondiciones & \tabitem El sistema detiene el vehículo. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 09}
@@ -236,7 +256,11 @@ activación del intermitente (RF-08)}}\newline
 Propósito & El propósito de este caso de uso es hacer vibrar el volante del vehículo donde está instalado el sistema CARSEAFTY cuando el sistema detecte que hay una desviación entre la trayectoria del vehículo y la del carril superior al 10\%.\\ \hline
 Precondiciones &  \tabitem Existe una desviación superior al 10\% entre la trayectoria del carril y la que va a seguir el vehículo. \\ \hline
 Postcondiciones & \tabitem El sistema hará vibrar el volante. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 03}
@@ -264,7 +288,11 @@ activación del intermitente (RF-08)}}\newline
 Propósito & El propósito de este caso de uso es hacer girar 5º el volante del vehículo donde está instalado el sistema CARSEAFTY cuando el sistema detecte que hay una desviación entre la trayectoria del vehículo y la del carril.\\ \hline
 Precondiciones &  \tabitem El vehículo ha detectado una desviación de la trayectoria mayor del 15\% con respecto a la trayectoria calculada. \\ \hline
 Postcondiciones & \tabitem Se corrige la dirección del vehículo mediante un giro del volante de un máximo de 5 grados. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 04}
@@ -301,7 +329,11 @@ de circulación(RF-16)}}\newline
 Propósito & El propósito de este caso de uso es evitar que el vehículo donde está instalado el sistema CARSEAFTY supero el límete máximo de velocidad de la vía cuando el la funcionalidad de no superar el límite de velocidad esté activado.\\ \hline
 Precondiciones &  \tabitem El sistema tomará la velocidad máxima indicada por la señal o por el GPS. \\ \hline
 Postcondiciones & \tabitem El sistema hará que cuando el vehículo alcance la velocidad determinada por las señales y el gps, este, no acelere. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 06}
@@ -328,7 +360,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es notificar al conductor cuando haya un objeto en el punto ciego encendido una notificación luminosa en el espejo retrovisor del lado donde se encuentre el objeto.\\ \hline
 Precondiciones &  \tabitem Objeto situado en el punto ciego. \\ \hline
 Postcondiciones & \tabitem Se encenderá una notificación luminosa en el retrovisor del lado del vehículo en el que se encuentre el objeto. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 01}
@@ -354,7 +390,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es notificar al conductor mediante una señal sonora cuando quiera cambiar de carril (tenga el intermitente encendido) y exista un objeto en el punto ciego del lado hacia donde pretende desplazarse.\\ \hline
 Precondiciones &  \tabitem El intermitente tiene que estar activo. \newline \tabitem Hay un vehículo en el punto ciego del vehículo \\ \hline
 Postcondiciones & \tabitem Se encenderá una notificación luminosa en el retrovisor del lado del vehículo en el que se encuentre el objeto. \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 02}
@@ -378,7 +418,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es permitir al conductor activar o desactivar las alertas por exceso de velocidad.\\ \hline
 Precondiciones &  \tabitem El sistema debe estar activado. \\ \hline
 Postcondiciones & \tabitem Se avisará al conductor de que el sistema ha sido desactivado \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 07}
@@ -406,7 +450,11 @@ Referencias &
 Propósito & El propósito de este caso de uso es realizar una llamada al centro de emergencia correspondiente en caso de que sea necesario (accidente o situación de emergencia).\\ \hline
 Precondiciones &  \tabitem Que se produzca un accidente \\ \hline
 Postcondiciones &  \\ \hline
-Interacción & \\ \hline
+\multirow{2}{*}{Interacción} & Con el Actor \newline
+\tabitem I1
+\\ & Con el Sistema \newline
+\tabitem I2
+\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 10}

@@ -295,3 +295,5 @@ bindingoffset=0mm, top=25mm, bottom=35mm, headsep=1cm}
 	\mdseries \\#2 %Position
 	\end{flushright}
 }
+
+\newcommand{\tabitem}{~\llap{-}~~}
