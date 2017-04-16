@@ -362,6 +362,38 @@ Alternativas & \\ \hline
 \end{table}
 
 
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{p{3,5cm} p{11cm}}
+\multicolumn{2}{c}{\textbf{CDUE-08} } \\ \hline \hline
+\textbf{Nombre} & Activar notificación de descanso \\ \hline
+\textbf{Actores} & Conductor \\ \hline
+\textbf{Tipo} & Primario y esencial \\ \hline
+\textbf{Descripción} & Cuando el vehículo aplique el algoritmo para detectar la posición de los párpados del conductor y mida la presión que hace este sobre el volante, y estos valores indiquen que el conductor está distraído, a punto de dormirse, o dormido, se activará una señal sonora durante 3 segundos. \\ \hline
+\textbf{Referencias} &
+\tabitem \hyperref[tab:RF-25]{\textit{Detección conductor dormido (RF-25)}}\newline
+\tabitem \hyperref[tab:RF-26]{\textit{Análisis del comportamiento (RF-26)}}\newline
+\tabitem \hyperref[tab:RF-27]{\textit{Recomendación de descanso (RF-27)}}\newline
+\tabitem \hyperref[tab:RF-28]{\textit{Detención del vehículo por conductor dormido (RF-28)}}
+\\ \hline
+\textbf{Propósito} & El propósito de este caso de uso es detectar si el conductor ha perdido la atención o necesita descansar y notificarle dicha situación mediante una señal sonora.\\ \hline
+\textbf{Precondiciones} &  \tabitem La presión con el volante no es la suficiente. \newline \tabitem La posición de los párpados indican que el conductor está cansado o dormido. \\ \hline
+\textbf{Postcondiciones} & \tabitem Se activará la notificación sonora durante 3 segundos para avisar al conductor. \\ \hline
+\multirow{5}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta que el conductor se ha quedado dormido.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema activará una señal sonora para despertar al conductor.\newline
+\tabitem 3.- El sistema recomendará al conductor que pare el vehículo y descanse.
+\\ \hline
+Alternativas & \\ \hline
+\end{tabular}
+\caption{Caso de uso en formato expandido 08}
+\label{tab:CDUE-08}
+\end{center}
+\end{table}
+
+
 \subsection{Casos de Uso en formato Expandido de la Tercera Iteración}
 
 \begin{table}[H]
