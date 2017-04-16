@@ -7,16 +7,16 @@
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{Identificador} } \\ \hline \hline
-Nombre &  \\ \hline
-Actores &  \\ \hline
-Tipo & \\ \hline
-Descripción &  \\ \hline
-Referencias &  \\ \hline
-Propósito &  \\ \hline
-Precondiciones &  \\ \hline
-Postcondiciones &  \\ \hline
-Interacción &  \\ \hline
-Alternativas &  \\ \hline
+\textbf{Nombre} &  \\ \hline
+\textbf{Actores} &  \\ \hline
+\textbf{Tipo} & \\ \hline
+\textbf{Descripción} &  \\ \hline
+\textbf{Referencias} &  \\ \hline
+\textbf{Propósito} &  \\ \hline
+\textbf{Precondiciones} &  \\ \hline
+\textbf{Postcondiciones} &  \\ \hline
+\textbf{Interacción} &  \\ \hline
+\textbf{Alternativas} &  \\ \hline
 \end{tabular}
 \caption{Formato de las tablas de los casos de uso en formato expandido.}
 \label{tab:formatoCDUE}
@@ -81,11 +81,11 @@ Alternativas &  \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-05} } \\ \hline \hline
-Nombre & Activar notificación por velocidad máxima \\ \hline
-Actores & GPS, Señal \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & El sistema indica en el panel de abordo la velocidad máxima establecida para esa vía. \\ \hline
-Referencias &
+\textbf{Nombre} & Activar notificación por velocidad máxima \\ \hline
+\textbf{Actores} & GPS, Señal \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & El sistema indica en el panel de abordo la velocidad máxima establecida para esa vía. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-10]{\textit{Reconocimiento de las señales de tráfico (RF-10)}}\newline
 \tabitem \hyperref[tab:RF-11]{\textit{Clasificación por formas y colores (RF-11)}}\newline
 \tabitem \hyperref[tab:RF-12]{\textit{Reconocimiento señales de velocidad (RF-12)}}\newline
@@ -101,13 +101,17 @@ de circulación(RF-16)}}\newline
 \tabitem \hyperref[tab:RF-20]{\textit{Priorización señales de obra (RF-20)}}\newline
 \tabitem \hyperref[tab:RF-21]{\textit{Restauración de la velocidad por defecto (RF-21)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es notificar al conductor cuando el vehículo supero la velocidad máxima permitida en la vía.\\ \hline
-Precondiciones &  \tabitem El vehículo ha detectado cual es la velocidad máxima a la que se puede circular por la vía actual. \\ \hline
-Postcondiciones & \tabitem Se muestra en el panel la velocidad máxima. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es notificar al conductor cuando el vehículo supere la velocidad máxima permitida en la vía.\\ \hline
+\textbf{Precondiciones} &  \tabitem El vehículo ha detectado cual es la velocidad máxima a la que se puede circular por la vía actual. \\ \hline
+\textbf{Postcondiciones} & \tabitem Se muestra en el panel la velocidad máxima. \\ \hline
+\multirow{8}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema reconoce las señales de tráfico.\newline
+\tabitem 2.- El sistema reconocer las señales de velocidad máxima y mínima.\newline
+\tabitem 4.- El sistema utiliza la señal GPS para conocer el tipo de vía.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 3.- El sistema establece las velocidades máxima y mínima a través de las señales.\newline
+\tabitem 5.- El sistema establece las velocidades máxima y mínima en función del tipo de vía.\newline
+\tabitem 6.- El sistema notifica en el panel de a bordo la velocidad máxima.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -122,11 +126,11 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-12} } \\ \hline \hline
-Nombre & Preparar vehículo para impacto \\ \hline
-Actores & Objeto \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & El sistema reducirá la velocidad del vehículo si detecta una posible colisión. \\ \hline
-Referencias &
+\textbf{Nombre} & Preparar vehículo para impacto \\ \hline
+\textbf{Actores} & Objeto \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & El sistema reducirá la velocidad del vehículo si detecta una posible colisión. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-38]{\textit{Colisión inminente (RF-38)}}\newline
 \tabitem \hyperref[tab:RF-39]{\textit{Primera medida por colisión inminente (RF-39)}}\newline
 \tabitem \hyperref[tab:RF-40]{\textit{Segunda medida por colisión inminente (RF-40)}}\newline
@@ -134,13 +138,18 @@ Referencias &
 \tabitem \hyperref[tab:RF-42]{\textit{Cuarta medida por colisión inminente (RF-42)}}\newline
 \tabitem \hyperref[tab:RF-43]{\textit{Revisión de las acciones (RF-43)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es poner en marcha todos los mecanismos convenientes en el caso de detectar una colisión inminente (reducir la velocidad, ajustar los cinturones, cerrar las ventanillas, etc.). \\ \hline
-Precondiciones &  \tabitem El sistema detecta una colisión inminente (la probabilidad de evitar un obstáculo es menor del 70\%) \\ \hline
-Postcondiciones &  \tabitem El sistema reduce la velocidad del vehículo. \newline \tabitem El sistema ajusta los cinturones de seguridad \newline \tabitem El sistema fija los asientos \newline \tabitem El sistema cierra las ventanillas \newline \tabitem Si se evita el accidente se deshacen las acciones. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es poner en marcha todos los mecanismos convenientes en el caso de detectar una colisión inminente (reducir la velocidad, ajustar los cinturones, cerrar las ventanillas, etc.). \\ \hline
+\textbf{Precondiciones} &  \tabitem El sistema detecta una colisión inminente (la probabilidad de evitar un obstáculo es menor del 70\%) \\ \hline
+\textbf{Postcondiciones} &  \tabitem El sistema reduce la velocidad del vehículo. \newline \tabitem El sistema ajusta los cinturones de seguridad \newline \tabitem El sistema fija los asientos \newline \tabitem El sistema cierra las ventanillas \newline \tabitem Si se evita el accidente se deshacen las acciones. \\ \hline
+\multirow{10}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta objetos u obstáculos en la vía.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema calcula la posibilidad de colisión.\newline
+\tabitem 3.- Si la posibilidad es alta, el sistema prepara el vehículo para el impacto.\newline
+\tabitem 4.- El sistema disminuye la velocidad del vehículo.\newline
+\tabitem 5.- El sistema ajusta los cinturones de seguridad.\newline
+\tabitem 6.- El sistema fija los asientos.\newline
+\tabitem 7.- El sistema baja las ventanillas.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -154,22 +163,23 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-11} } \\ \hline \hline
-Nombre & Activar notificación por riesgo de colisión \\ \hline
-Actores & Objeto \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & El sistema activará una notificación por riesgo de colisión cuando existe una posibilidad del 50\% de que se colisione con otro objeto. \\ \hline
-Referencias &
+\textbf{Nombre} & Activar notificación por riesgo de colisión \\ \hline
+\textbf{Actores} & Objeto \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & El sistema activará una notificación por riesgo de colisión cuando existe una posibilidad del 50\% de que se colisione con otro objeto. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-34]{\textit{Detección de obstáculos (RF-34)}}\newline
 \tabitem \hyperref[tab:RF-35]{\textit{Análisis del riesgo de una colisión (RF-35)}}\newline
 \tabitem \hyperref[tab:RF-36]{\textit{Generación de la notificación por colisión (RF-36)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es notificar al conductor del vehículo cuando existe un elevado riesgo de sufrir una colisión. \\ \hline
-Precondiciones &  \tabitem El sistema detecta una colisión con una probabilidad del 50\% \\ \hline
-Postcondiciones &  \tabitem El sistema emite una notificación. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es notificar al conductor del vehículo cuando existe un elevado riesgo de sufrir una colisión. \\ \hline
+\textbf{Precondiciones} &  \tabitem El sistema detecta una colisión con una probabilidad del 50\% \\ \hline
+\textbf{Postcondiciones} &  \tabitem El sistema emite una notificación. \\ \hline
+\multirow{5}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta objetos u obstáculos en la vía.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema calcula la posibilidad de colisión.\newline
+\tabitem 3.- Si la posibilidad es alta, el sistema genera la notificación por riesgo de colisión.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -183,20 +193,21 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-13} } \\ \hline \hline
-Nombre & Reducir velocidad \\ \hline
-Actores & Objeto \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & El sistema reducirá la velocidad del vehículo si detecta una posible colisión. \\ \hline
-Referencias &
+\textbf{Nombre} & Reducir velocidad \\ \hline
+\textbf{Actores} & Objeto \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & El sistema reducirá la velocidad del vehículo si detecta una posible colisión. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-38]{\textit{Colisión inminente (RF-38)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es reducir la velocidad del vehículo en el que está instalado CARSEAFTY en caso de detectar una posible colisión. \\ \hline
-Precondiciones &  \tabitem El sistema detecta una colisión inminente (la probabilidad de evitar un obstáculo es menor del 70\%) \\ \hline
-Postcondiciones &  \tabitem El sistema reduce la velocidad del vehículo. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es reducir la velocidad del vehículo en el que está instalado CARSEAFTY en caso de detectar una posible colisión. \\ \hline
+\textbf{Precondiciones} &  \tabitem El sistema detecta una colisión inminente (la probabilidad de evitar un obstáculo es menor del 70\%) \\ \hline
+\textbf{Postcondiciones} &  \tabitem El sistema reduce la velocidad del vehículo. \\ \hline
+\multirow{5}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta un objeto u obstáculo en la vía.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema calcula que la velocidad de colisión es superior al 70\%.\newline
+\tabitem 3.- El sistema reduce la velocidad del vehículo.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -210,21 +221,22 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-09} } \\ \hline \hline
-Nombre & Detener el vehículo \\ \hline
-Actores & Objeto, Conductor \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & El sistema detendrá el vehículo si el conductor ha perdido la atención o si se detecta una posible colisión y el conductor pisa el freno. \\ \hline
-Referencias &
+\textbf{Nombre} & Detener el vehículo \\ \hline
+\textbf{Actores} & Objeto, Conductor \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & El sistema detendrá el vehículo si el conductor ha perdido la atención o si se detecta una posible colisión y el conductor pisa el freno. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-28]{\textit{Detención del vehículo por conductor dormido (RF-28)}}\newline
 \tabitem \hyperref[tab:RF-37]{\textit{Ayuda en el frenado (RF-37)}}
 \\ \hline
-Propósito & El propósito de este caso de uso detener el vehículo en el que está instalado el sistema CARSEAFTY en caso de detectar una colisión inminente, si el conductor ha perdido la atención o si hay una posible colisión y el conductor pisa el freno. \\ \hline
-Precondiciones &  \tabitem El conductor no recupera la atención tras más de tres segundos de emisión de señales acústicas. \newline \tabitem Se ha recibido una notificación por colisión y el conductor ha pisado el freno. \\ \hline
-Postcondiciones & \tabitem El sistema detiene el vehículo. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso detener el vehículo en el que está instalado el sistema CARSEAFTY en caso de detectar una colisión inminente, si el conductor ha perdido la atención o si hay una posible colisión y el conductor pisa el freno. \\ \hline
+\textbf{Precondiciones} &  \tabitem El conductor no recupera la atención tras más de tres segundos de emisión de señales acústicas. \newline \tabitem Se ha recibido una notificación por colisión y el conductor ha pisado el freno. \\ \hline
+\textbf{Postcondiciones} & \tabitem El sistema detiene el vehículo. \\ \hline
+\multirow{6}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 2.- El sistema detecta la utilización del freno por parte del conductor.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 1.- El sistema detecta una notificación por riesgo de colisión.\newline
+\tabitem 3.- El sistema reduce la velocidad del vehículo hasta detenerlo.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -241,11 +253,11 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-03} } \\ \hline \hline
-Nombre & Hacer vibrar el volante \\ \hline
-Actores & Líneas de carril \\ \hline
-Tipo & Primario y esencial \\ \hline
-Descripción & Cuando el vehículo detecte que existe una desviación superior al 10\% entre la trayectoria del carril y la que va a seguir el vehículo (en función de la velocidad y el ángulo del volante), hará vibrar el volante para avisar al conductor.  \\ \hline
-Referencias &
+\textbf{Nombre} & Hacer vibrar el volante \\ \hline
+\textbf{Actores} & Líneas de carril \\ \hline
+\textbf{Tipo} & Primario y esencial \\ \hline
+\textbf{Descripción} & Cuando el vehículo detecte que existe una desviación superior al 10\% entre la trayectoria del carril y la que va a seguir el vehículo (en función de la velocidad y el ángulo del volante), hará vibrar el volante para avisar al conductor.  \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-05]{\textit{Trayectoria del carril (RF-05)}}\newline
 \tabitem \hyperref[tab:RF-06]{\textit{Trayectoria del vehículo (RF-06)}}\newline
 \tabitem \hyperref[tab:RF-07]{\textit{Vibración del volante por diferencia de trayectorias (RF-07)}}\newline
@@ -253,13 +265,15 @@ Referencias &
 activación del intermitente (RF-08)}}\newline
 \tabitem \hyperref[tab:RF-09]{\textit{Corrección de la dirección (RF-09)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es hacer vibrar el volante del vehículo donde está instalado el sistema CARSEAFTY cuando el sistema detecte que hay una desviación entre la trayectoria del vehículo y la del carril superior al 10\%.\\ \hline
-Precondiciones &  \tabitem Existe una desviación superior al 10\% entre la trayectoria del carril y la que va a seguir el vehículo. \\ \hline
-Postcondiciones & \tabitem El sistema hará vibrar el volante. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es hacer vibrar el volante del vehículo donde está instalado el sistema CARSEAFTY cuando el sistema detecte que hay una desviación entre la trayectoria del vehículo y la del carril superior al 10\%.\\ \hline
+\textbf{Precondiciones} &  \tabitem Existe una desviación superior al 10\% entre la trayectoria del carril y la que va a seguir el vehículo. \\ \hline
+\textbf{Postcondiciones} & \tabitem El sistema hará vibrar el volante. \\ \hline
+\multirow{7}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta el carril por el que circula el vehículo mediante las líneas de carril.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema detecta la trayectoria del vehículo en función de la velocidad del mismo y el ángulo del volante.\newline
+\tabitem 3.- El sistema comprueba si ambas trayectorias coinciden o no.\newline
+\tabitem 4.- Si ambas trayectorias no coinciden, el sistema hace vibrar el volante para advertir al conductor.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -274,24 +288,26 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-04} } \\ \hline \hline
-Nombre & Corregir el volante \\ \hline
-Actores & Líneas de carril \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & El sistema gira el volante si detecta una desviación de la trayectoria del vehículo. \\ \hline
-Referencias &
+\textbf{Nombre} & Corregir el volante \\ \hline
+\textbf{Actores} & Líneas de carril \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & El sistema gira el volante si detecta una desviación de la trayectoria del vehículo. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-05]{\textit{Trayectoria del carril (RF-05)}}\newline
 \tabitem \hyperref[tab:RF-06]{\textit{Trayectoria del vehículo (RF-06)}}\newline
 \tabitem \hyperref[tab:RF-08]{\textit{Excepción de aviso de cambio de carril por
 activación del intermitente (RF-08)}}\newline
 \tabitem \hyperref[tab:RF-09]{\textit{Corrección de la dirección (RF-09)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es hacer girar 5º el volante del vehículo donde está instalado el sistema CARSEAFTY cuando el sistema detecte que hay una desviación entre la trayectoria del vehículo y la del carril.\\ \hline
-Precondiciones &  \tabitem El vehículo ha detectado una desviación de la trayectoria mayor del 15\% con respecto a la trayectoria calculada. \\ \hline
-Postcondiciones & \tabitem Se corrige la dirección del vehículo mediante un giro del volante de un máximo de 5 grados. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es hacer girar 5º el volante del vehículo donde está instalado el sistema CARSEAFTY cuando el sistema detecte que hay una desviación entre la trayectoria del vehículo y la del carril.\\ \hline
+\textbf{Precondiciones} &  \tabitem El vehículo ha detectado una desviación de la trayectoria mayor del 15\% con respecto a la trayectoria calculada. \\ \hline
+\textbf{Postcondiciones} & \tabitem Se corrige la dirección del vehículo mediante un giro del volante de un máximo de 5 grados. \\ \hline
+\multirow{7}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta el carril por el que circula el vehículo mediante las líneas de carril.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema detecta la trayectoria del vehículo en función de la velocidad del mismo y el ángulo del volante.\newline
+\tabitem 3.- El sistema comprueba si ambas trayectorias coinciden o no.\newline
+\tabitem 4.- Si ambas trayectorias difieren más de un 15\%, el sistema corrige el volante un máximo de 5º..
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -305,11 +321,11 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-06} } \\ \hline \hline
-Nombre & No superar el límite de velocidad \\ \hline
-Actores & Reloj \\ \hline
-Tipo & Primario y esencial \\ \hline
-Descripción & Cuando la funcionalidad de no superar el límite de velocidad esté activada, el sistema dejará de acelerar cuando se alcance la velocidad máxima indicada por las señales de la vía o por el GPS. \\ \hline
-Referencias &
+\textbf{Nombre} & No superar el límite de velocidad \\ \hline
+\textbf{Actores} & Reloj \\ \hline
+\textbf{Tipo} & Primario y esencial \\ \hline
+\textbf{Descripción} & Cuando la funcionalidad de no superar el límite de velocidad esté activada, el sistema dejará de acelerar cuando se alcance la velocidad máxima indicada por las señales de la vía o por el GPS. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-10]{\textit{Reconocimiento de las señales de tráfico (RF-10)}}\newline
 \tabitem \hyperref[tab:RF-11]{\textit{Clasificación por formas y colores (RF-11)}}\newline
 \tabitem \hyperref[tab:RF-12]{\textit{Reconocimiento señales de velocidad (RF-12)}}\newline
@@ -326,13 +342,17 @@ de circulación(RF-16)}}\newline
 \tabitem \hyperref[tab:RF-21]{\textit{Restauración de la velocidad por defecto (RF-21)}}\newline
 \tabitem \hyperref[tab:RF-22]{\textit{Configuración límite de velocidad (RF-22)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es evitar que el vehículo donde está instalado el sistema CARSEAFTY supero el límete máximo de velocidad de la vía cuando el la funcionalidad de no superar el límite de velocidad esté activado.\\ \hline
-Precondiciones &  \tabitem El sistema tomará la velocidad máxima indicada por la señal o por el GPS. \\ \hline
-Postcondiciones & \tabitem El sistema hará que cuando el vehículo alcance la velocidad determinada por las señales y el gps, este, no acelere. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es evitar que el vehículo donde está instalado el sistema CARSEAFTY supero el límete máximo de velocidad de la vía cuando el la funcionalidad de no superar el límite de velocidad esté activado.\\ \hline
+\textbf{Precondiciones} &  \tabitem El sistema tomará la velocidad máxima indicada por la señal o por el GPS. \\ \hline
+\textbf{Postcondiciones} & \tabitem El sistema hará que cuando el vehículo alcance la velocidad determinada por las señales y el gps, este, no acelere. \\ \hline
+\multirow{8}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema reconoce las señales de tráfico.\newline
+\tabitem 2.- El sistema reconocer las señales de velocidad máxima y mínima.\newline
+\tabitem 4.- El sistema utiliza la señal GPS para conocer el tipo de vía.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 3.- El sistema establece las velocidades máxima y mínima a través de las señales.\newline
+\tabitem 5.- El sistema establece las velocidades máxima y mínima en función del tipo de vía.\newline
+\tabitem 6.- Si la velocidad del vehículo es superior a la velocidad establecida, y el usuario ha configurado que el vehículo no supere nunca la velocidad máxima, el sistema evita que el conductor aumente la velocidad.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -348,22 +368,22 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-01} } \\ \hline \hline
-Nombre & Activar notificación de punto ciego en el retrovisor \\ \hline
-Actores & Objeto \\ \hline
-Tipo & Primario y real \\ \hline
-Descripción & Cuando haya un objeto en el punto ciego, se activará una notificación luminosa en el retrovisor que se encuentre en el mismo lado del vehículo que el objeto.  \\ \hline
-Referencias &
+\textbf{Nombre} & Activar notificación de punto ciego en el retrovisor \\ \hline
+\textbf{Actores} & Objeto \\ \hline
+\textbf{Tipo} & Primario y real \\ \hline
+\textbf{Descripción} & Cuando haya un objeto en el punto ciego, se activará una notificación luminosa en el retrovisor que se encuentre en el mismo lado del vehículo que el objeto.  \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-01]{\textit{Detección punto ciego (RF-01)}}\newline
 \tabitem \hyperref[tab:RF-02]{\textit{Notificar coche en punto ciego (RF-02)}}\newline
 \tabitem \hyperref[tab:RF-03]{\textit{Notificación en el retrovisor (RF-03)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es notificar al conductor cuando haya un objeto en el punto ciego encendido una notificación luminosa en el espejo retrovisor del lado donde se encuentre el objeto.\\ \hline
-Precondiciones &  \tabitem Objeto situado en el punto ciego. \\ \hline
-Postcondiciones & \tabitem Se encenderá una notificación luminosa en el retrovisor del lado del vehículo en el que se encuentre el objeto. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es notificar al conductor cuando haya un objeto en el punto ciego encendido una notificación luminosa en el espejo retrovisor del lado donde se encuentre el objeto.\\ \hline
+\textbf{Precondiciones} &  \tabitem Objeto situado en el punto ciego. \\ \hline
+\textbf{Postcondiciones} & \tabitem Se encenderá una notificación luminosa en el retrovisor del lado del vehículo en el que se encuentre el objeto. \\ \hline
+\multirow{4}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta un objeto en la parte lateral trasera del vehículo (punto ciego).
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema notifica al conductor de la existencia de un objeto en el punto ciego.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -378,23 +398,24 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-02} } \\ \hline \hline
-Nombre & Activar notificación sonora por punto ciego \\ \hline
-Actores & Conductor \\ \hline
-Tipo & Primario y esencial \\ \hline
-Descripción & Cuando el sistema detecte que hay un objeto en el punto ciego del vehículo, y el conductor tenga el intermitente activado, se activará una notificación sonora. \\ \hline
-Referencias &
+\textbf{Nombre} & Activar notificación sonora por punto ciego \\ \hline
+\textbf{Actores} & Conductor \\ \hline
+\textbf{Tipo} & Primario y esencial \\ \hline
+\textbf{Descripción} & Cuando el sistema detecte que hay un objeto en el punto ciego del vehículo, y el conductor tenga el intermitente activado, se activará una notificación sonora. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-01]{\textit{Detección punto ciego (RF-01)}}\newline
 \tabitem \hyperref[tab:RF-02]{\textit{Notificar coche en punto ciego (RF-02)}}\newline
 \tabitem \hyperref[tab:RF-04]{\textit{Generación de notificación sonora (RF-04)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es notificar al conductor mediante una señal sonora cuando quiera cambiar de carril (tenga el intermitente encendido) y exista un objeto en el punto ciego del lado hacia donde pretende desplazarse.\\ \hline
-Precondiciones &  \tabitem El intermitente tiene que estar activo. \newline \tabitem Hay un vehículo en el punto ciego del vehículo \\ \hline
-Postcondiciones & \tabitem Se encenderá una notificación luminosa en el retrovisor del lado del vehículo en el que se encuentre el objeto. \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
-\\ \hline
+\textbf{Propósito} & El propósito de este caso de uso es notificar al conductor mediante una señal sonora cuando quiera cambiar de carril (tenga el intermitente encendido) y exista un objeto en el punto ciego del lado hacia donde pretende desplazarse.\\ \hline
+\textbf{Precondiciones} &  \tabitem El intermitente tiene que estar activo. \newline \tabitem Hay un vehículo en el punto ciego del vehículo \\ \hline
+\textbf{Postcondiciones} & \tabitem Se encenderá una notificación luminosa en el retrovisor del lado del vehículo en el que se encuentre el objeto. \\ \hline
+\multirow{6}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta un objeto en la parte lateral trasera del vehículo (punto ciego).\newline
+\tabitem 3.- El sistema detecta que el conductor ha encendido el intermitente del mismo lado en el que se encuentra el objeto.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema notifica al conductor de la existencia de un objeto en el punto ciego.\newline
+\tabitem 4.- El sistema avisa al conductor mediante una señal sonora-.\\ \hline
 Alternativas & \\ \hline
 \end{tabular}
 \caption{Caso de uso en formato expandido 02}
@@ -407,21 +428,21 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-07} } \\ \hline \hline
-Nombre & Desactivar notificaciones \\ \hline
-Actores & Conductor \\ \hline
-Tipo & Primario y esencial \\ \hline
-Descripción & El usuario puede desactivar las notificaciones de alerta de velocidad en caso de que lo desee. \\ \hline
-Referencias &
+\textbf{Nombre} & Desactivar notificaciones \\ \hline
+\textbf{Actores} & Conductor \\ \hline
+\textbf{Tipo} & Primario y esencial \\ \hline
+\textbf{Descripción} & El usuario puede desactivar las notificaciones de alerta de velocidad en caso de que lo desee. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-23]{\textit{Descativación alerta por exceso de velocidad (RF-23)}}\newline
 \tabitem \hyperref[tab:RF-24]{\textit{Reactivación alerta por exceso de velocidad (RF-24)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es permitir al conductor activar o desactivar las alertas por exceso de velocidad.\\ \hline
-Precondiciones &  \tabitem El sistema debe estar activado. \\ \hline
-Postcondiciones & \tabitem Se avisará al conductor de que el sistema ha sido desactivado \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es permitir al conductor activar o desactivar las alertas por exceso de velocidad.\\ \hline
+\textbf{Precondiciones} &  \tabitem El sistema debe estar activado. \\ \hline
+\textbf{Postcondiciones} & \tabitem Se avisará al conductor de que el sistema ha sido desactivado \\ \hline
+\multirow{4}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El conductor desactiva las notificaciones o alertas por exceso de velocidad.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- Al reiniciar el sistema, las notificaciones o alertas por exceso de velocidad vuelven a estar activas.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
@@ -436,24 +457,24 @@ Alternativas & \\ \hline
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
 \multicolumn{2}{c}{\textbf{CDUE-10} } \\ \hline \hline
-Nombre & Llamada de emergencia \\ \hline
-Actores & Reloj \\ \hline
-Tipo & Primario y esencial \\ \hline
-Descripción & En caso de accidente el sistema enviará una notificación al centro de emergencias. Esta notificación tendrá el formato estándar europeo. El conducto podrá cancelar la llamada de emergencia si se encuentra consciente y considera que no es necesario. \\ \hline
-Referencias &
+\textbf{Nombre} & Llamada de emergencia \\ \hline
+\textbf{Actores} & Reloj \\ \hline
+\textbf{Tipo} & Primario y esencial \\ \hline
+\textbf{Descripción} & En caso de accidente el sistema enviará una notificación al centro de emergencias. Esta notificación tendrá el formato estándar europeo. El conducto podrá cancelar la llamada de emergencia si se encuentra consciente y considera que no es necesario. \\ \hline
+\textbf{Referencias} &
 \tabitem \hyperref[tab:RF-29]{\textit{Detección de colisión (RF-29)}}\newline
 \tabitem \hyperref[tab:RF-30]{\textit{Mensaje de emergencia (RF-30)}}\newline
 \tabitem \hyperref[tab:RF-31]{\textit{Detección del número de ocupantes (RF-31)}}\newline
 \tabitem \hyperref[tab:RF-32]{\textit{Formato del mensaje (RF-32)}}\newline
 \tabitem \hyperref[tab:RF-33]{\textit{Activación de las luces de emergencia (RF-33)}}
 \\ \hline
-Propósito & El propósito de este caso de uso es realizar una llamada al centro de emergencia correspondiente en caso de que sea necesario (accidente o situación de emergencia).\\ \hline
-Precondiciones &  \tabitem Que se produzca un accidente \\ \hline
-Postcondiciones &  \\ \hline
-\multirow{2}{*}{Interacción} & Con el Actor \newline
-\tabitem I1
-\\ & Con el Sistema \newline
-\tabitem I2
+\textbf{Propósito} & El propósito de este caso de uso es realizar una llamada al centro de emergencia correspondiente en caso de que sea necesario (accidente o situación de emergencia).\\ \hline
+\textbf{Precondiciones} &  \tabitem Que se produzca un accidente \\ \hline
+\textbf{Postcondiciones} &  \\ \hline
+\multirow{2}{*}{\textbf{Interacción}} & \textbf{Con el Actor} \newline
+\tabitem 1.- El sistema detecta que el vehículo se ha visto involucrado en un accidente o colisión.
+\\ & \textbf{Con el Sistema} \newline
+\tabitem 2.- El sistema notifica al centro de emergencia el número de ocupantes, la localización GPS y la velocidad a la que se hay producido el accidente.
 \\ \hline
 Alternativas & \\ \hline
 \end{tabular}
