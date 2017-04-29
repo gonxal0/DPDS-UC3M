@@ -1,9 +1,12 @@
 \chapter{Modelo Conceptual}
+\clearpage
+
 \section {Modelo de Clases}
 \par En este documento se presenta el diagrama de clases generado sobre el sistema de seguridad al volante que está siendo desarrollado para CARSAFETY. El diagrama, representado con notación UML (Unified Modeling Language), muestra la estructura del sistema, especificando sus diferentes clases, atributos y métodos.
 
+
 %Figura
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=1\textwidth]{./img/m_clases.png}
 \end{center}
@@ -11,12 +14,85 @@
 \label{tab:m_clases}
 \end{figure}
 
+\par Debido a la extensión del diagrama, hemos procedido a subsividirlo en función de los subsistemas involucrados. Todos los subsistemas se relacionan con las clases Vehículo \ref{tab:c_vehiculo} y Notificación \ref{tab:c_Notificacion}.
+
+%Figura
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/VehiculoNotificacion.png}
+\end{center}
+\caption{Clases Vehiculo, Notificación}
+\label{tab:c_vehiculo_notificacionPNG}
+\end{figure}
+
+%Figura
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/SistemaFatiga.png}
+\end{center}
+\caption{Clases pertenecientes al subsistema SistemaFatiga}
+\label{tab:c_SistemaFatigaPNG}
+\end{figure}
+
+%Figura
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/SistemaLlamadaEmergencia.png}
+\end{center}
+\caption{Clases pertenecientes al subsistema SistemaLlamadaEmergencia}
+\label{tab:c_SistemaLlamadaEmergenciaPNG}
+\end{figure}
+
+
+
+%Figura
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/SistemaPuntoCiego.png}
+\end{center}
+\caption{Clases pertenecientes al subsistema SistemaPuntoCiego}
+\label{tab:c_SistemaPuntoCiegoPNG}
+\end{figure}
+
+
+%Figura
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/SistemaVelocidad.png}
+\end{center}
+\caption{Clases pertenecientes al subsistema SistemaVelocidad}
+\label{tab:c_SistemaVelocidadPNG}
+\end{figure}
+
+%Figura
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/SistemaPrecolision.png}
+\end{center}
+\caption{Clases pertenecientes al subsistema SistemaPrecolision}
+\label{tab:c_SistemaPrecolisionPNG}
+\end{figure}
+
+
+
+%Figura
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\textwidth]{./img/SistemaCambioCarril2.png}
+\end{center}
+\caption{Clases pertenecientes al subsistema SistemaCambioCarril}
+\label{tab:c_SistemaCambioCarrilPNG}
+\end{figure}
+
+
+
+
 \par A continuación, se procede a explicar la funcionalidad de cada una de las clases representadas en el diagrama, junto con sus atributos y métodos asociados. Para ello se utilizará una tabla como la que se presenta a continuación:
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  \\ \hline \hline
+\multicolumn{2}{c}{\textbf{Nombre de la clase} } \\ \hline \hline
 \textbf{Responsabilidad} &  \\ \hline
 \textbf{Atributos} &  \\ \hline
 \textbf{Relaciones} & \\ \hline
@@ -44,10 +120,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Vehículo\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Vehículo} } \\ \hline \hline
 \textbf{Responsabilidad} &  Encargada de arrancar todos los subsistemas de control y de gestionar la frenada del vehículo en caso de emergencia\\ \hline
 \textbf{Atributos} &  \begin{itemize} \item arrancado: boolean \end{itemize}\\ \hline
 \textbf{Relaciones} & Tiene una relación de composición con las siguientes clases:
@@ -78,10 +154,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SistemaPuntoCiego\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SistemaPuntoCiego} } \\ \hline \hline
 \textbf{Responsabilidad} &  Sistema encargado de procesar los datos recibidos por los diversos sensores que lo componen así como de decidir cuando se debe activar algún tipo de notificación para hacer saber al conductor que hay un objeto en el punto ciego del vehículo\\ \hline
 \textbf{Atributos} &  \begin{itemize} \item activado: boolean \end{itemize}\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -119,10 +195,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SensorPuntoCiego\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SensorPuntoCiego} } \\ \hline \hline
 \textbf{Responsabilidad} &  Conjunto de sensores que detectan cuándo un objeto se encuentra situado en la zona del punto ciego del vehículo\\ \hline
 \textbf{Atributos} &  \begin{itemize} \item lado: int \end{itemize}\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -146,10 +222,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Intermitente\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Intermitente} } \\ \hline \hline
 \textbf{Responsabilidad} &  Conjunto de intermitentes fisicos del vehiculo\\ \hline
 \textbf{Atributos} &  \begin{itemize} \item lado: int \item activado: boolean \end{itemize}\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de agregación con las siguientes clases:
@@ -175,10 +251,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SistemaCambioCarril\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SistemaCambioCarril} } \\ \hline \hline
 \textbf{Responsabilidad} &  Sistema encargado de procesar los datos recibidos por los diversos sensores que lo componen para poder calcular la desviación respecto al carril que va a seguir el vehículo, así como hacer vibrar o mover el volante para permanecer en el carril por el se circula y decidir cuando se debe activar algún tipo de notificación para hacer saber al conductor del vehículo que se está saliendo del carril. \\ \hline
 \textbf{Atributos} & No contiene atributos
                       \\ \hline
@@ -222,17 +298,16 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SensorCambioCarril\\ \hline  \hline
+\multicolumn{2}{c}{\textbf{SensorCambioCarril} } \\ \hline \hline
 \textbf{Responsabilidad} &  Conjunto de sensores que detectan la trayectoria del carril por el que se encuentra circulando el vehículo. \\ \hline
 \textbf{Atributos} & No contiene atributos
                       \\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
                       \begin{itemize}
                         \item SistemaCambioCarril \ref{tab:c_SCarril}
-                        \item Trayectoria \ref{tab:c_trayectoria}
                       \end{itemize}
 
                       \par Tiene una relación de agregación con las siguientes clases:
@@ -257,10 +332,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Trayectoria\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Trayectoria} } \\ \hline \hline
 \textbf{Responsabilidad} &  Trayectoria detectada\\ \hline
 \textbf{Atributos} &  \begin{itemize}
                         \item xT: double
@@ -296,10 +371,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Volante\\ \hline  \hline
+\multicolumn{2}{c}{\textbf{Volante} } \\ \hline \hline
 \textbf{Responsabilidad} &  Clase que recopila información sobre la posición del volante y con la capacidad de hacer vibrar al mismo.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item orientacion: double
@@ -344,10 +419,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SistemaAlertaVelocidad\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SistemaAlertaVelocidad} } \\ \hline \hline
 \textbf{Responsabilidad} &  Sistema encargado de gestionar la velocidad máxima para la vía por la que el vehículo se encuentra circulando, en todo momento.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item velocidadActual: int
@@ -391,10 +466,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Vía\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Vía} } \\ \hline \hline
 \textbf{Responsabilidad} &  Clase que debe comprobar en qué tipo de vía se encuentra el vehículo y determinar de esta forma la velocidad máxima permitida.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item velocidadPermitida: int
@@ -423,10 +498,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  BaseDeDatos\\ \hline \hline
+\multicolumn{2}{c}{\textbf{BaseDeDatos} } \\ \hline \hline
 \textbf{Responsabilidad} &  Clase encargada de almacenar toda la información referente a los tipos de vía existentes y las velocidades máximas a las que está permitido circular en las mismas.   \\ \hline
 \textbf{Atributos} & Esta clase no tiene atributos\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -455,10 +530,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SensorAlertaVelocidad\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SensorAlertaVelocidad} } \\ \hline \hline
 \textbf{Responsabilidad} &  Clase encargada de detectar las señales de trafico.   \\ \hline
 \textbf{Atributos} & Esta clase no tiene atributos\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -490,10 +565,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Señal\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Señal} } \\ \hline \hline
 \textbf{Responsabilidad} &  Clase que crea y almacena la informacion obtenida por una lectura de una señal de tráfico. \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item formato: int
@@ -533,10 +608,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Velocidad\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Velocidad} } \\ \hline \hline
 \textbf{Responsabilidad} &  Clase encargada de obtener la velocidad a la que circula el vehículo y de fijar la velocidad máxima a la que se puede circular en función de una señal o del tipo de vía en la que se encuentre circulando el vehículo.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item velocidad: double
@@ -579,10 +654,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SistemaPreColisión\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SistemaPreColisión} } \\ \hline \hline
 \textbf{Responsabilidad} &  Sistema encargado de detectar cuando el vehículo se encuentra en riesgo de sufrir una colisión, solicitar la activación de una notificación y preparar el vehículo para el impacto.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item activado: boolean
@@ -625,10 +700,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SensorColisión\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SensorColisión} } \\ \hline \hline
 \textbf{Responsabilidad} &  Conjunto de sensores que deben detectar cuando hay un objeto en la trayectoria del vehículo que sea susceptible de generar una colisión  \\ \hline
 \textbf{Atributos} & Esta clase no contiene atributos\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -655,10 +730,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SistemaFatiga\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SistemaFatiga} } \\ \hline \hline
 \textbf{Responsabilidad} &  Sistema encargado de analizar la situación física en la que se encuentra el conductor del vehículo. Deberá analizar la posición de los parpados la presión ejercida sobre el volante, tomando las acciones oportunas en caso de emergencia.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item activado: boolean
@@ -703,10 +778,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SensorFatiga\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SensorFatiga} } \\ \hline \hline
 \textbf{Responsabilidad} &  Conjunto de sensores que deben detectar cuando el conductor del vehículo se está quedando o dormido o ha perdido la concentración en la carretera.  \\ \hline
 \textbf{Atributos} & Esta clase no contiene atributos\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -733,10 +808,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  SistemaLlamadaEmergencia\\ \hline \hline
+\multicolumn{2}{c}{\textbf{SistemaLlamadaEmergencia} } \\ \hline \hline
 \textbf{Responsabilidad} &  Sistema encargado de realizar una llamada de emergencia cuando ha ocurrido un accidente.  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item numeroOcupantes: int
@@ -782,10 +857,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Mensaje\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Mensaje} } \\ \hline \hline
 \textbf{Responsabilidad} &   Clase encargada de generar el mensaje que posteriormente será enviado por la clase SistemaLlamadaEmergencia \ref{tab:c_SLEmerg}  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item Ocupantes: int
@@ -812,10 +887,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Freno\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Freno} } \\ \hline \hline
 \textbf{Responsabilidad} &   Clase encargada de accionar el freno fisico del vehículo en caso de emergencia  \\ \hline
 \textbf{Atributos} & Esta clase no contiene atributos\\ \hline
 \textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
@@ -841,10 +916,10 @@
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{p{3,5cm} p{11cm}}
-\textbf{Nombre de la clase} &  Notificación\\ \hline \hline
+\multicolumn{2}{c}{\textbf{Notificación} } \\ \hline \hline
 \textbf{Responsabilidad} &   Clase encargada de generar, activar y desactivar todas las notificaciones del sistema. Para ello necesitará saber el dispositivo que solicita la notificación y el tipo de la misma  \\ \hline
 \textbf{Atributos} & \begin{itemize}
                       \item dispositivo: enum
