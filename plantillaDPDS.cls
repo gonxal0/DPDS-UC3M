@@ -104,6 +104,7 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \lstnewenvironment{listing}[1][]
    {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
 
+
 \lstdefinestyle{consola}
    {basicstyle=\ttfamily,
     backgroundcolor=\color{gray75},
