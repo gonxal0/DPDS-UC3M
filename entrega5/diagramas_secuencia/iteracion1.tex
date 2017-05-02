@@ -12,7 +12,9 @@
   \label{img:notif_velocidad_max}
 \end{figure}
 
-\par El diagrama de secuencia de la figura \ref{img:prep_vehiculo_impacto} hace referencia al \nameref{tab_CDUE-12}
+\clearpage
+
+\par El diagrama de secuencia de la figura \ref{img:prep_vehiculo_impacto} hace referencia al \nameref{tab_CDUE-12}. En el \textit{flujo de ejecución normal} no se realiza ninguna acción, únicamente se comprueba si hay algún obstáculo en la carretera, pero como no se encuentra no se produce ninguna acción. En cambio, en el \textit{flujo de ejecución alternativo}, si que hay algún objeto en la calzada por lo que se desencadenan las acciones reflejadas en la figura.
 
 \begin{figure}[h]
   \begin{center}
@@ -20,4 +22,24 @@
   \end{center}
   \caption{Diagrama de secuencia para el CDUE-12: \textit{Preparar vehículo para impacto}}
   \label{img:prep_vehiculo_impacto}
+\end{figure}
+
+\par El diagrama de secuencia de la figura \ref{img:not_riesgo_colision} hace referencia al \nameref{tab:CDUE-11}. Este diagrama es muy similar al de la figura \ref{img:prep_vehiculo_impacto}, lo que ocurre es que después de calcular la probabilidad en el \textit{flujo de ejecución alternativo} se activa una notificación en lugar de preparar el vehículo para el impacto.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{./img/diagramas_de_secuencia/CDUE-11.png}
+  \end{center}
+  \caption{Diagrama de secuencia para el CDUE-11: \textit{Activar notificación por riesgo de colisión}}
+  \label{img:not_riesgo_colision}
+\end{figure}
+
+\par El diagrama de secuencia de la figura \ref{img:reducir_velocidad} hace referencia al \nameref{tab:CDUE-13}. Este diagrama es muy similar los dos diagramas de secuencia explicados anteriormente, la diferencia radica en que después de calcular la probabilidad en el \textit{flujo de ejecución alternativo} se reduce la velocidad del vehículo.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{./img/diagramas_de_secuencia/CDUE-13.png}
+  \end{center}
+  \caption{Diagrama de secuencia para el CDUE-13: \textit{Reducir velocidad}}
+  \label{img:reducir_velocidad}
 \end{figure}
