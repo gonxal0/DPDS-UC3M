@@ -134,10 +134,14 @@
                         \item SistemaLlamadaEmergencia \ref{tab:c_SLEmerg}
                         \item SistemaPreColisión \ref{tab:c_SPColision}
                         \item SistemaAlertaVelocidad \ref{tab:c_SAVelocidad}
-                        \item Freno \ref{tab:c_freno}
                       \end{itemize}\\ \hline
 \textbf{Métodos} &  \begin{itemize}
                       \item arrancarVehiculo(): void
+                      \item frenar(): void
+                      \item prepararVehiculoImpacto(): void
+                      \item ayudaFrenado(): void
+                      \item fijarCinturones(): void
+                      \item cerrarVentanillas(): void
                     \end{itemize}\\ \hline
 \end{tabular}
 \caption{Clase Vehículo}
@@ -684,7 +688,7 @@
 \textbf{Métodos} &  \begin{itemize}
                       \item activar(): void
                       \item desactivar(): void
-                      \item prepararParaImpacto(): void
+                      \item calcularProbabilidad(): float
                     \end{itemize}\\ \hline
 \end{tabular}
 \caption{Clase SistemaPreColisión}
@@ -881,37 +885,6 @@
 \label{tab:c_mensaje}
 \end{center}
 \end{table}
-
-
-
-
-
-
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{p{3,5cm} p{11cm}}
-\multicolumn{2}{c}{\textbf{Freno} } \\ \hline \hline
-\textbf{Responsabilidad} &   Clase encargada de accionar el freno fisico del vehículo en caso de emergencia  \\ \hline
-\textbf{Atributos} & Esta clase no contiene atributos\\ \hline
-\textbf{Relaciones} & \par Tiene una relación de composición con las siguientes clases:
-                      \begin{itemize}
-                        \item Vehículo \ref{tab:c_vehiculo}
-                      \end{itemize}
-
-                      \\ \hline
-
-\textbf{Métodos} &  \begin{itemize}
-                      \item frenar(): void
-                    \end{itemize}\\ \hline
-\end{tabular}
-\caption{Clase Freno}
-\label{tab:c_freno}
-\end{center}
-\end{table}
-
-
-
-
 
 
 
