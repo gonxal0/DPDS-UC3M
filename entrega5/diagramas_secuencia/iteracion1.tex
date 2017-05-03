@@ -34,12 +34,22 @@
   \label{img:not_riesgo_colision}
 \end{figure}
 
-\par El diagrama de secuencia de la figura \ref{img:reducir_velocidad} hace referencia al \nameref{tab:CDUE-13}. Este diagrama es muy similar los dos diagramas de secuencia explicados anteriormente, la diferencia radica en que después de calcular la probabilidad en el \textit{flujo de ejecución alternativo} se reduce la velocidad del vehículo.
+\par El diagrama de secuencia de la figura \ref{img:reducir_velocidad} hace referencia al \nameref{tab:CDUE-09}. Este diagrama representa el caso de uso en el que el vehículo se detiene al detectar que el conductor se está quedando dormido y no responde a la notificación sonora generada.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{./img/diagramas_de_secuencia/CDUE-13.png}
+  \end{center}
+  \caption{Diagrama de secuencia para el CDUE-09: \textit{Detener Vehículo}}
+  \label{img:reducir_velocidad}
+\end{figure}
+
+\par El diagrama de secuencia de la figura \ref{img:detener_vehiculo} hace referencia al \nameref{tab:CDUE-13}. Este diagrama es muy similar los dos diagramas de secuencia explicados anteriormente \ref{img:not_riesgo_colision} y \ref{img:prep_vehiculo_impacto}, la diferencia radica en que después de calcular la probabilidad en el \textit{flujo de ejecución alternativo} se reduce la velocidad del vehículo.
 
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.75\textwidth]{./img/diagramas_de_secuencia/CDUE-13.png}
   \end{center}
   \caption{Diagrama de secuencia para el CDUE-13: \textit{Reducir velocidad}}
-  \label{img:reducir_velocidad}
+  \label{img:detener_vehiculo}
 \end{figure}
